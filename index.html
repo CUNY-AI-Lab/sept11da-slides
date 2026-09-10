@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
-  <link rel="stylesheet" href="src/styles.css?v=20260911o" />
+  <link rel="stylesheet" href="src/styles.css?v=20260911p" />
 </head>
 <body>
 <div id="image-lightbox" class="lightbox" aria-hidden="true">
@@ -215,7 +215,7 @@
   <section class="slide placeholder-slide figure-side" data-slide="tier-1" aria-label="Tier one: personally identifiable information review">
     <div class="content">
       <div class="tier-badge">Tier 1</div>
-      <h1>Personally identifiable information</h1>
+      <h1>Review: Personally identifiable information</h1>
     </div>
     <figure class="stage stack-stage ui-stage" aria-label="The triage interface for personally identifiable information">
       <img src="images/pii-cards.png" alt="Review cards counting items where consent was refused, where a minor is directly reachable, and recordings in which an address or phone number is spoken aloud">
@@ -226,7 +226,7 @@
   <section class="slide placeholder-slide wide-figure-slide" data-slide="tier-2" aria-label="Tier two: transcription and description quality">
     <div class="content wide-figure-heading">
       <div class="tier-badge">Tier 2</div>
-      <h1>Is the machine right?</h1>
+      <h1>Quality review (Is the machine right?)</h1>
     </div>
     <figure class="stage figure-stage ui-stage" aria-label="Quality dashboard: records checked per source">
       <img src="images/qc-dashboard.png" alt="Quality dashboard by source: vision 15,199 records, zip-image 16,433, pdf 332, htr 41,225, asr 5,519 — almost none yet checked">
@@ -235,7 +235,8 @@
 
   <section class="slide placeholder-slide figure-side review-slide" data-slide="review-tool" aria-label="The review interface, shown for handwriting, photographs and audio">
     <div class="content">
-      <h1>The review interface</h1>
+      <div class="tier-badge">Tier 2</div>
+      <h1>Quality review (Is the machine right?)</h1>
       <ul class="review-kinds">
         <li class="frag" data-gallery-idx="0"><span class="rk-n">41,225</span><span class="rk-k">Handwritten card pages</span></li>
         <li class="frag" data-gallery-idx="1"><span class="rk-n">31,600</span><span class="rk-k">Photographs, flyers and drawings</span></li>
@@ -256,9 +257,28 @@
       <h1>Metadata</h1>
       <p>Now that every item has text, writing &mdash; or inferring &mdash; metadata for discoverability and accessibility becomes far easier.</p>
     </div>
-    <figure class="stage bignum-stage" aria-label="Zero tags across the whole archive">
-      <div class="bignum">0</div>
-      <p class="bignum-cap">tags across 70,359 items</p>
+    <figure class="stage record-stage" aria-label="A Dublin Core record as stored: eighteen fields, of which the ones that make an item findable are empty across all 70,359 items">
+      <div class="dc-record">
+        <div class="dc-head"><span>Dublin Core, as stored</span><span class="dc-count">18 fields &times; 70,359 items</span></div>
+        <ul class="dc-fields">
+          <li><span class="f">Title</span><span class="v"></span></li>
+          <li><span class="f">Creator</span><span class="v"></span></li>
+          <li class="flagged"><span class="f">Subject</span><span class="v"><span class="stamp zero">empty on all 70,359</span></span></li>
+          <li><span class="f">Description</span><span class="v"></span></li>
+          <li><span class="f">Publisher</span><span class="v"></span></li>
+          <li><span class="f">Contributor</span><span class="v"></span></li>
+          <li class="flagged"><span class="f">Date</span><span class="v"><span class="stamp thin">24 usable</span></span></li>
+          <li><span class="f">Type</span><span class="v"></span></li>
+          <li><span class="f">Format</span><span class="v"></span></li>
+          <li><span class="f">Identifier</span><span class="v"></span></li>
+          <li><span class="f">Source</span><span class="v"></span></li>
+          <li><span class="f">Language</span><span class="v"></span></li>
+          <li><span class="f">Relation</span><span class="v"></span></li>
+          <li><span class="f">Coverage</span><span class="v"></span></li>
+          <li><span class="f">Rights</span><span class="v"></span></li>
+        </ul>
+      </div>
+      <p class="record-cap">The fields an archive is found through are the empty ones. Filling them is judgement, not compute.</p>
     </figure>
   </section>
 
@@ -303,7 +323,7 @@
   </div>
 </footer>
 
-<script src="src/slides.js?v=20260911o"></script>
+<script src="src/slides.js?v=20260911p"></script>
 <script>
 /* Title background — "Index Sweep".
    A field of marks, one per sampled item in the archive. Most sit dark: held,

@@ -160,7 +160,7 @@ Material that had effectively left the Archive while still sitting on the disk.
 
 ---
 
-## Slide 9 — Tier 1, Personally identifiable information
+## Slide 9 — Tier 1, Review: Personally identifiable information
 
 Title and the triage screens only. All of this is spoken.
 
@@ -183,7 +183,7 @@ thousands of separate judgements.
 
 ---
 
-## Slide 10 — Tier 2, Is the machine right?
+## Slide 10 — Tier 2, Quality review (Is the machine right?)
 
 Title and the dashboard only.
 
@@ -200,10 +200,11 @@ concrete.
 
 ---
 
-## Slide 11 — The review interface
+## Slide 11 — Tier 2 continued, the review interface
 
-Sits between Tier 2 and Tier 3: this is the tool that does the checking you just
-saw counted.
+Deliberately carries the same title as slide 10. Slide 10 counts the checking;
+this one shows the tool that does it. Same tier, same heading, so it reads as a
+continuation rather than a new topic.
 
 **The sentence that used to be on the slide:** every item comes up beside what
 the model said about it. A reviewer judges the match, fixes the text if it is
