@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
-  <link rel="stylesheet" href="src/styles.css?v=20260911a" />
+  <link rel="stylesheet" href="src/styles.css?v=20260911d" />
 </head>
 <body>
 <div id="image-lightbox" class="lightbox" aria-hidden="true">
@@ -49,7 +49,7 @@
           </div>
           <div class="eyebrow">Panel Discussion · Elebash Recital Hall · September 10, 2026</div>
           <h1><span class="title-line">The Afterlives of the</span><span class="title-line">September 11 Digital Archive</span></h1>
-          <p class="panelists"><strong>Stefano Morello</strong> — Director, ASHP&#8202;/&#8202;CML</p>
+          <p class="panelists"><strong>Stefano Morello</strong></p>
           <p class="institution">The Graduate Center, City University of New York</p>
           <a class="title-link" href="https://911digitalarchive.org" target="_blank" rel="noopener">911digitalarchive.org</a>
         </div>
@@ -197,63 +197,18 @@
     <figure class="stage blank-stage" aria-hidden="true"></figure>
   </section>
 
-  <!-- ====================== 8. THREE ARTIFACTS ====================== -->
-  <section class="slide placeholder-slide figure-side" data-slide="artifact-card" aria-label="A handwritten card and its transcript">
-    <div class="content">
-      <div class="label">One card</div>
-      <h1>41,225 of these</h1>
-      <p>A card filled out at a &ldquo;Bearing Witness to History&rdquo; kiosk. Until this year the text on it was not searchable, not readable by a screen reader, and not countable.</p>
-      <p>The scan stays. The transcript sits beside it, and so does the name the model flagged for a human to look at.</p>
-    </div>
-    <figure class="stage figure-stage ui-stage" aria-label="Review interface: a handwritten card beside its machine transcription">
-      <img src="images/qc-htr.png" alt="A handwritten card from a Bearing Witness to History kiosk beside its machine transcription, with confidence 0.85 and a detected name flagged for review">
-    </figure>
-  </section>
-
-  <section class="slide placeholder-slide figure-side" data-slide="artifact-audio" aria-label="A voicemail and its transcript">
-    <div class="content">
-      <div class="label">One recording</div>
-      <h1>199 hours of these</h1>
-      <p>A seventeen-year-old in Cleveland describing her school day. One of 152,000 timed segments — which means you can now search into the middle of a recording, not just its title.</p>
-    </div>
-    <figure class="stage figure-stage ui-stage" aria-label="Review interface: an audio player beside the machine transcript of a recording">
-      <img src="images/qc-asr.png" alt="The review interface showing an audio player beside a machine transcript of a young woman describing September 11 at her school in Cleveland, Ohio">
-    </figure>
-  </section>
-
-  <section class="slide placeholder-slide figure-side" data-slide="artifact-photo" aria-label="A photograph and its description">
-    <div class="content">
-      <div class="label">One photograph</div>
-      <h1>31,600 of these</h1>
-      <p>An aerial view of the site, described in enough detail to be found by someone who cannot see it — and by someone searching for &ldquo;construction equipment&rdquo; or &ldquo;Hudson River.&rdquo;</p>
-      <p>The model also records what it is unsure of, whether anyone is identifiable, and whether the image is distressing. Those flags are what make a review queue possible at all.</p>
-    </div>
-    <figure class="stage figure-stage ui-stage" aria-label="Review interface: a photograph beside its machine-generated description">
-      <img src="images/qc-vision.png" alt="The review interface showing an aerial photograph of the World Trade Center site beside a machine-generated description recording category, people, distressing flag and confidence">
-    </figure>
-  </section>
-
-
-  <!-- ======================= 9. THE REVIEW TIERS ======================= -->
-  <section class="slide slide-break" data-slide="break-review" aria-label="Section break: none of this is publishable yet">
-    <div class="content">
-      <div class="label">What comes next</div>
-      <h1>None of this is publishable yet.</h1>
-      <h2>A machine read the archive. Four tiers of human review stand between that and anything a visitor should see. This is what we are seeking funding for.</h2>
-    </div>
-  </section>
-
+  <!-- ================= 8. THE WORK THAT IS LEFT ================= -->
   <section class="slide placeholder-slide figure-side" data-slide="tier-0" aria-label="Tier zero: file recovery">
     <div class="content">
       <div class="tier-badge">Tier 0</div>
       <h1>File recovery</h1>
-      <p>Flash pieces, dead formats, files no current browser will open. 123 Flash objects are already back — 197 minutes of speech that had effectively left the archive while still sitting on the disk.</p>
+      <p>Flash pieces, dead formats, files no current browser will open. Material that had effectively left the archive while still sitting on the disk.</p>
       <ul class="tier-rail">
         <li class="on"><span class="t">0</span><span>File recovery</span></li>
         <li><span class="t">1</span><span>Personally identifiable information</span></li>
         <li><span class="t">2</span><span>Transcription and description quality</span></li>
         <li><span class="t">3</span><span>Metadata</span></li>
-        <li><span class="t">4</span><span>New pathways of interpretation</span></li>
+        <li class="then"><span class="t">4</span><span>New pathways of interpretation</span></li>
       </ul>
     </div>
     <figure class="stage blank-stage" aria-hidden="true"></figure>
@@ -264,15 +219,18 @@
       <div class="tier-badge">Tier 1</div>
       <h1>Personally identifiable information</h1>
       <p>Machine reading makes an archive searchable. It also makes it searchable for things a depositor in 2002 never imagined being findable.</p>
-      <ul class="figures">
-        <li><span class="k">Consent refused — the depositor ticked <em>No</em></span><span class="n">157</span></li>
-        <li><span class="k">A minor, and directly reachable</span><span class="n">168</span></li>
-        <li><span class="k">Recordings where an address or phone number is spoken aloud</span><span class="n">117</span></li>
+      <p class="plan-lede">For example:</p>
+      <ul class="arrow-bullets">
+        <li>The depositor ticked <em>No</em> to consent</li>
+        <li>A minor who is directly reachable</li>
+        <li>An address or phone number spoken aloud in a recording</li>
+        <li>A full name and school written on a card</li>
+        <li>Contact details buried in a scanned document</li>
       </ul>
     </div>
     <figure class="stage stack-stage ui-stage" aria-label="The triage interface for personally identifiable information">
-      <img src="images/pii-cards.png" alt="Three review cards: 157 items where consent was refused, 168 where a minor is directly reachable, and 117 recordings in which an address or phone number is spoken aloud">
-      <img src="images/pii-queue.png" alt="The rest of the review queue by priority: 157 block, 3,941 urgent, 1,934 high, 10,346 medium, 3,258 low">
+      <img src="images/pii-cards.png" alt="Review cards counting items where consent was refused, where a minor is directly reachable, and recordings in which an address or phone number is spoken aloud">
+      <img src="images/pii-queue.png" alt="The rest of the review queue, sorted by priority from block down to low">
     </figure>
   </section>
 
@@ -300,16 +258,24 @@
     </figure>
   </section>
 
-  <section class="slide placeholder-slide statement crowded" data-slide="plurality" aria-label="Multiplicity you cannot search is functionally a singular">
+  <!-- ============== 9. THE REVIEW INTERFACE ============== -->
+  <section class="slide placeholder-slide figure-side review-slide" data-slide="review-tool" aria-label="The review interface, shown for handwriting, photographs and audio">
     <div class="content">
-      <div class="label">Why it matters</div>
-      <blockquote>
-        <p>Multiplicity you can't search is functionally a singular.</p>
-        <p>The institutional narrative didn't defeat the plural archive. It just had better retrieval.</p>
-      </blockquote>
-      <cite>Search is where an archive keeps its promise of plurality — or quietly stops keeping it</cite>
+      <div class="label">What we built</div>
+      <h1>The review interface</h1>
+      <p>Every item comes up beside what the model said about it. A reviewer judges the match, fixes the text if it is wrong, and the model&rsquo;s original output is kept either way.</p>
+      <ul class="review-kinds">
+        <li class="frag" data-gallery-idx="0"><span class="rk-n">41,225</span><span class="rk-k">Handwritten card pages</span></li>
+        <li class="frag" data-gallery-idx="1"><span class="rk-n">31,600</span><span class="rk-k">Photographs, flyers and drawings</span></li>
+        <li class="frag" data-gallery-idx="2"><span class="rk-n">199 hrs</span><span class="rk-k">Voicemails, interviews, recordings</span></li>
+      </ul>
     </div>
-    <figure class="stage blank-stage" aria-hidden="true"></figure>
+    <figure class="stage stage-gallery ui-stage" data-frag-sync aria-label="The same review interface shown for a handwritten card, a photograph, and an audio recording">
+      <img class="gallery-item active" src="images/qc-htr.png" alt="The review interface showing a handwritten card beside its machine transcription, with a confidence score and a detected name flagged for review">
+      <img class="gallery-item" src="images/qc-vision.png" alt="The review interface showing an aerial photograph of the World Trade Center site beside a machine-generated description recording category, people, distressing flag and confidence">
+      <img class="gallery-item" src="images/qc-asr.png" alt="The review interface showing an audio player beside the machine transcript of a recording">
+      <div class="gallery-dots" aria-hidden="true"></div>
+    </figure>
   </section>
 
   <!-- ==================== 10. TIER 4 — INTERPRETATION ==================== -->
@@ -462,20 +428,20 @@
   <div class="footer-slider">
     <button class="footer-arrow" id="btn-prev" aria-label="Previous slide">&#8592;</button>
     <div class="slider-track">
-      <input type="range" id="slide-scrubber" min="1" max="27" value="1" aria-label="Navigate to slide">
+      <input type="range" id="slide-scrubber" min="1" max="24" value="1" aria-label="Navigate to slide">
       <div class="slider-progress"></div>
       <div class="slider-thumb"></div>
     </div>
     <button class="footer-arrow" id="btn-next" aria-label="Next slide">&#8594;</button>
     <button class="footer-arrow" id="btn-fullscreen" aria-label="Toggle fullscreen" title="Toggle fullscreen (F)">&#9974;</button>
     <div class="footer-meta">
-      <span id="slider-counter">1 / 27</span>
+      <span id="slider-counter">1 / 24</span>
       <span class="kbd">Space</span>
     </div>
   </div>
 </footer>
 
-<script src="src/slides.js?v=20260911a"></script>
+<script src="src/slides.js?v=20260911d"></script>
 <script>
 /* Title background — "Index Sweep".
    A field of marks, one per sampled item in the archive. Most sit dark: held,

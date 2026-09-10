@@ -131,22 +131,43 @@ articulate it.
 
 ---
 
-## Slides 8–10 — Three artifacts
+## Slides 8–11 — The work that is left
 
-Let them sit. The card, the photograph, the voicemail. Don't narrate what's
-visible; say what wasn't possible before — none of that text was searchable,
-screen-readable, or countable.
+Tiers 0 through 3 are review and remediation: recovering dead formats, deciding
+what personal information can be published, checking whether the machine got it
+right, and building metadata. Tier 4 is not review — it is what becomes possible
+once the first four are done. The rail on slide 8 sets that apart deliberately.
+
+**Tier 1 (personal information)** lists examples rather than counts on purpose.
+The counts exist and are on the screenshot beside it if anyone asks: 157 where
+consent was refused, 168 minors who are directly reachable, 117 recordings with
+an address or phone number spoken aloud, and about 19,600 items in the queue
+overall.
+
+**Tier 3 (metadata)** is where to slow down. Everything above it was
+engineering. This one is scholarship. Eighteen fields, twenty-four usable dates,
+zero tags across seventy thousand items.
 
 ---
 
-## Slide 11 — None of this is publishable yet
+## Slide 12 — The review interface
 
-The ask starts here. A machine read it; human judgement is what stands between
-that and anything a visitor should see.
+This is what we actually built, and it comes after the tiers so the audience
+already knows what the work consists of.
+
+Press space three times. Each press names a kind of artifact and swaps the
+screenshot: handwriting, then photographs, then audio. Same interface each time.
+
+The thing to say: the model's original output is never overwritten. A corrected
+transcript is stored beside it, with who corrected it and when — so the archive
+can finally say where its own text came from. That is the provenance point from
+slide 2, answered.
+
+Click any screenshot to zoom it full-screen if someone asks for detail.
 
 ---
 
-## Slides 12–16 — The four tiers of review
+## Slide 13 — Multiplicity you can't search
 
 This is the ask. None of it is publishable yet; a machine read it, and human
 judgement is what stands between that and anything a visitor should see.
@@ -154,17 +175,23 @@ judgement is what stands between that and anything a visitor should see.
 **Tier 3 (metadata)** is where to slow down. Everything above it was
 engineering. This one is scholarship.
 
-**On plurality** — the line to land: multiplicity you can't search is
-functionally a singular. The institutional narrative didn't defeat the plural
-archive; it just had better retrieval. Search isn't a technical postscript to
-preservation. It's where an archive either keeps its promise of plurality or
-quietly stops keeping it.
+**On plurality — this was a slide, now it is yours to say.** Deliver it as
+written; it is the argument of the talk:
 
+> Multiplicity you can't search is functionally a singular.
+>
+> The institutional narrative didn't defeat the plural archive. It just had
+> better retrieval.
+>
+> Search is where an archive keeps its promise of plurality — or quietly stops
+> keeping it.
+
+Say it off the metadata tier, with nothing on the screen competing with it.
 Connects directly to Lisa's critique — don't soften it.
 
 ---
 
-## Slides 17–24 — Tier 4, the seven lenses
+## Slides 14–21 — Tier 4, the seven lenses
 
 Move briskly. These are illustrations of what becomes *askable*, not results.
 Nobody has run any of them yet. Say so.
@@ -174,18 +201,18 @@ responsibly claim the archive under-represents anything, because nobody could
 count. That's a methodological point, not a political one, and it lands with
 this audience.
 
-**Slide 24 — Iraq / FDNY: still a placeholder. Fill it or cut it.**
+**Slide 21 — Iraq / FDNY: still a placeholder. Fill it or cut it.**
 
 ---
 
-## Slide 25 — Every visual walks back to the artifact
+## Slide 22 — Every visual walks back to the artifact
 
 The rule. A visualization that can't be walked back to the object is an
 assertion. Say the 6,761-cards example concretely.
 
 ---
 
-## Slide 26 — To their plan, not instead of it
+## Slide 23 — To their plan, not instead of it
 
 Say publicly and unambiguously: RRCHNM has an active plan — Title II
 accessibility compliance, and flattening the site for long-term sustainability.
@@ -194,13 +221,13 @@ work with them.
 
 ---
 
-## Slide 27 — Thank you
+## Slide 24 — Thank you
 
 ---
 
 ## Things to check before you go on
 
-- [ ] Fill or cut the Iraq / FDNY lens (slide 24)
+- [ ] Fill or cut the Iraq / FDNY lens (slide 21)
 - [ ] Start year for Trinh, Heppler and Scott — the chart currently guesses 2025
 - [ ] Jim Safley's bar now runs 2002–present (24 years), per the staff list —
       he was Project Associate and Archive Specialist at CHNM from 2002. Your

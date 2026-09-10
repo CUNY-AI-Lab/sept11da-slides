@@ -792,3 +792,33 @@ body.overview section.slide .content .run-cols { display: none !important; }
 .run-cols .pipeline { align-content: start; }
 .run-col { display: flex; flex-direction: column; min-width: 0; }
 .run-col .credit-units { margin-top: clamp(12px, 2vh, 22px); }
+
+/* ============================================================
+   Gallery — the framework's JS drives .stage-gallery but the
+   stylesheet never defined it. One stage, several images, advanced
+   by fragments so the same interface can be shown for handwriting,
+   photographs and audio without spending three slides on it.
+   ============================================================ */
+.stage-gallery { position: relative; display: block; min-width: 0; min-height: 0; }
+/* An image is a replaced element: with width/height auto it takes its
+   intrinsic size and ignores the insets, so it must be sized explicitly
+   and given its breathing room as padding inside the border box. */
+.stage-gallery > .gallery-item { position: absolute; inset: 0; width: 100%; height: 100%; box-sizing: border-box; padding: clamp(8px, 1.1vw, 14px); padding-bottom: clamp(24px, 3vh, 34px); object-fit: contain; object-position: center; opacity: 0; transition: opacity 0.4s ease; pointer-events: none; }
+.stage-gallery > .gallery-item.active { opacity: 1; }
+.gallery-dots { position: absolute; left: 0; right: 0; bottom: clamp(7px, 1vh, 12px); display: flex; justify-content: center; gap: 8px; z-index: 2; }
+.gallery-dot { width: 9px; height: 9px; padding: 0; border-radius: 999px; border: 1px solid rgba(255, 255, 255, 0.45); background: transparent; cursor: pointer; transition: background 0.2s, border-color 0.2s; }
+.gallery-dot.active { background: #fff; border-color: #fff; }
+
+/* The three kinds of artifact a reviewer meets, revealed one at a time
+   alongside the screenshot each one refers to. */
+.review-kinds { list-style: none; padding: 0; margin: clamp(12px, 2.2vh, 26px) 0 0; display: grid; gap: clamp(7px, 1.2vh, 13px); max-width: none !important; }
+.review-kinds li { display: grid; grid-template-columns: minmax(4.6em, max-content) minmax(0, 1fr); align-items: baseline; column-gap: clamp(12px, 1.4vw, 20px); margin: 0; padding: clamp(8px, 1.3vh, 14px) clamp(11px, 1.3vw, 17px); border-left: 3px solid rgba(var(--accent-rgb), 0.6); border-radius: 3px 9px 9px 3px; background: linear-gradient(90deg, rgba(var(--accent-rgb), 0.07), rgba(var(--accent-rgb), 0)); }
+.rk-n { font-family: var(--font-mono); font-weight: 600; font-size: clamp(17px, 1.6vw, 26px); color: var(--accent-deep); font-variant-numeric: tabular-nums; white-space: nowrap; }
+.rk-k { font-size: var(--fs-body-compact); line-height: 1.28; color: var(--fg); min-width: 0; }
+
+body.overview section.slide .content .review-kinds { display: none !important; }
+
+/* Tiers 0–3 are review and remediation; tier 4 is not review at all, so it
+   sits below a rule rather than reading as one more round of checking. */
+.tier-rail li.then { margin-top: clamp(8px, 1.4vh, 15px); border-top: 1px solid var(--rule); border-left-color: rgba(var(--accent-rgb), 0.55); background: rgba(var(--accent-rgb), 0.05); border-radius: 0 10px 10px 0; }
+.tier-rail li.then .t { color: var(--accent-deep); }
