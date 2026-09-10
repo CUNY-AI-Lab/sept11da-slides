@@ -144,12 +144,23 @@ articulate it.
 
 ---
 
-## Slides 8–11 — The work that is left
+## Slide 8 — Recovery, Review, and Remediation
 
-Tiers 0 through 3 are review and remediation: recovering dead formats, deciding
-what personal information can be published, checking whether the machine got it
-right, and building metadata. Tier 4 is not review — it is what becomes possible
-once the first four are done. The rail on slide 8 sets that apart deliberately.
+Just the list on screen. Everything below is yours to say.
+
+Tiers 0 through 3 are recovery, review and remediation: getting dead formats
+open again, deciding what personal information can be published, checking
+whether the machine got it right, and building metadata. Tier 4 is none of
+those — it is what becomes possible once the first four are done, which is why
+it sits below the rule.
+
+**On Tier 0.** Flash pieces, dead formats, files no current browser will open.
+Material that had effectively left the Archive while still sitting on the disk.
+123 Flash objects are already back.
+
+---
+
+## Slides 9–11 — Tiers 1 to 3
 
 **Tier 1 (personal information)** lists examples rather than counts on purpose.
 The counts exist and are on the screenshot beside it if anyone asks: 157 where
