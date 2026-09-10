@@ -608,7 +608,7 @@ body.overview section.slide .content .tier-badge::before { display: none; }
 .content p + p { margin-top: 0.62em; }
 
 /* Fixed label columns so the body text of every row starts on one line. */
-.status-list li { grid-template-columns: 7.4em minmax(0, 1fr); }
+.status-list li { grid-template-columns: 6.3em minmax(0, 1fr); }
 .status-list .tag { justify-self: start; }
 .principle-chain li { grid-template-columns: 5.4em minmax(0, 1fr); }
 .tier-rail li { grid-template-columns: 1.6em minmax(0, 1fr); }
@@ -652,3 +652,131 @@ body.overview section.slide .content cite { display: none !important; }
 body.overview section.slide .content blockquote { display: block !important; }
 body.overview section.slide .content blockquote p { display: block !important; font-size: 15px; line-height: 1.25; margin: 0; font-weight: 700; color: var(--fg-strong); }
 body.overview section.slide .content blockquote p + p { display: none !important; }
+
+/* ============================================================
+   Stewardship timeline (slide 2)
+   Two institutions built the archive; one of them kept it running.
+   The chart has to make that visible at a glance, so the bars are
+   coloured by institution and the ASHP band simply stops in 2005.
+   Columns are years: column N = year 2000 + N, 2001 through 2026,
+   and a bar's --e is exclusive (2002–2005 is --s:3; --e:7).
+   ============================================================ */
+:root { --ashp: #2c5470; --ashp-rgb: 44, 84, 112; --chnm: #b5342a; --chnm-rgb: 181, 52, 42; }
+
+.tl-topline { display: flex; align-items: flex-end; justify-content: space-between; gap: clamp(16px, 2.4vw, 40px); flex-wrap: wrap; margin-bottom: clamp(10px, 1.8vh, 20px); }
+.tl-topline h1 { margin-bottom: 0; }
+.tl-legend { display: flex; align-items: center; gap: clamp(12px, 1.6vw, 24px); flex-wrap: wrap; }
+.tl-key { display: inline-flex; align-items: center; gap: 9px; font-family: var(--font-mono); font-size: clamp(11px, 1vw, 16px); font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; padding: 6px 13px 6px 7px; border-radius: 999px; border: 1.5px solid; }
+.tl-key img { height: clamp(17px, 1.9vw, 27px); width: auto; background: #fff; padding: 2px 4px; border-radius: 5px; }
+.tl-key.ashp { color: var(--ashp); border-color: rgba(var(--ashp-rgb), 0.45); background: rgba(var(--ashp-rgb), 0.07); }
+.tl-key.chnm { color: var(--chnm); border-color: rgba(var(--chnm-rgb), 0.42); background: rgba(var(--chnm-rgb), 0.06); }
+
+.timeline { --tl-cols: 27; --tl-label: minmax(170px, 17.5vw); display: grid; gap: clamp(4px, 0.7vh, 8px); min-width: 0; }
+.tl-scale { display: grid; grid-template-columns: var(--tl-label) repeat(var(--tl-cols), minmax(0, 1fr)); font-family: var(--font-mono); font-size: clamp(10px, 0.92vw, 15px); letter-spacing: 0.05em; color: var(--muted); font-variant-numeric: tabular-nums; }
+.tl-scale span { grid-column: var(--s); grid-row: 1; }
+.tl-grid { position: relative; display: grid; gap: clamp(3px, 0.55vh, 7px); min-width: 0; }
+
+/* Milestone rules run the full height behind the bars. */
+.tl-marks { position: absolute; inset: 0; display: grid; grid-template-columns: var(--tl-label) repeat(var(--tl-cols), minmax(0, 1fr)); pointer-events: none; }
+.tl-marks i { grid-column: var(--s); grid-row: 1; position: relative; border-left: 1px dashed rgba(0, 0, 0, 0.18); }
+.tl-marks b { position: absolute; top: -2px; left: 6px; font-family: var(--font-mono); font-size: clamp(9px, 0.8vw, 13px); font-weight: 500; letter-spacing: 0.06em; text-transform: uppercase; color: var(--muted); white-space: nowrap; opacity: 0.72; }
+.tl-marks i:last-child b { left: auto; right: 6px; }
+
+.tl-row { display: grid; grid-template-columns: var(--tl-label) repeat(var(--tl-cols), minmax(0, 1fr)); align-items: center; gap: 0; min-width: 0; }
+.tl-name { grid-column: 1; padding-right: clamp(10px, 1.2vw, 18px); font-size: clamp(11px, 1.02vw, 17px); line-height: 1.16; color: var(--fg-strong); font-weight: 700; text-align: right; text-wrap: balance; min-width: 0; }
+.tl-bar { grid-column: calc(var(--s)) / calc(var(--e)); display: flex; align-items: center; min-width: 0; height: clamp(24px, 3.6vh, 38px); padding: 0 clamp(8px, 0.9vw, 14px); border-radius: 5px; font-size: clamp(10px, 0.92vw, 15px); line-height: 1.12; color: #fff; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.tl-row.ashp .tl-bar { background: linear-gradient(90deg, var(--ashp), rgba(var(--ashp-rgb), 0.82)); }
+.tl-row.chnm .tl-bar { background: linear-gradient(90deg, var(--chnm), rgba(var(--chnm-rgb), 0.8)); }
+.tl-row.anchor .tl-bar { height: clamp(28px, 4.2vh, 46px); font-weight: 700; box-shadow: 0 0 0 2px rgba(var(--chnm-rgb), 0.22); }
+
+/* The current team's bar is open at the left: the archive does not record
+   when they started. That gap is the argument, so it is drawn, not hidden. */
+.tl-bar.open { background: repeating-linear-gradient(115deg, rgba(var(--chnm-rgb), 0.9) 0 10px, rgba(var(--chnm-rgb), 0.62) 10px 20px) !important; }
+
+@media (max-width: 719.98px) {
+  .timeline { --tl-label: minmax(84px, 30vw); }
+  .tl-name { font-size: 10px; }
+  .tl-bar { font-size: 0; padding: 0 4px; height: 18px; }
+  .tl-marks b { display: none; }
+  .tl-topline { gap: 10px; }
+}
+
+body.overview section.slide .content .timeline,
+body.overview section.slide .content .tl-legend { display: none !important; }
+body.overview section.slide .content .tl-topline { display: block !important; }
+
+/* `.content p` (0,1,1) beats a bare utility class (0,1,0), so every caption
+   class applied to a <p> inside a text panel needs the panel in its selector
+   or it silently renders at full body size. */
+.content .roster-note { font-size: var(--fs-caption); line-height: 1.4; }
+.content .lens-note { font-size: var(--fs-body-compact); }
+.content .lens-q { font-size: clamp(22px, 2.2vw, 36px); }
+.content .principle-line { font-size: clamp(24px, 2.5vw, 42px); }
+.content .stage-note span { font-size: var(--fs-caption); }
+.content .qr-row.tight p { font-size: var(--fs-caption); }
+
+/* Milestone labels get their own band above the bars instead of sitting on
+   top of the first row. */
+.tl-grid { padding-top: clamp(15px, 2.1vh, 22px); }
+.tl-marks b { top: 1px; }
+
+/* The band that carries the argument: after 2005 the chart is one institution. */
+.tl-band { position: relative; grid-row: 1; grid-column: 6 / 28; background: rgba(var(--chnm-rgb), 0.06); border-left: 1px solid rgba(var(--chnm-rgb), 0.18); border-radius: 0 6px 6px 0; }
+.tl-band em { position: absolute; bottom: 3px; right: 8px; font-style: normal; font-family: var(--font-mono); font-size: clamp(9px, 0.82vw, 13px); font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: var(--chnm); opacity: 0.6; white-space: nowrap; }
+
+/* Two eras, drawn as equals: the archive was collected in one and kept in the
+   other. Without this the chart reads as one long red bar beside a blue sliver,
+   which misstates who built the thing. */
+.tl-band { position: relative; grid-row: 1; grid-column: var(--s) / var(--e); border-radius: 6px; }
+.tl-band.both { background: rgba(var(--ashp-rgb), 0.07); }
+.tl-band.chnm { background: rgba(var(--chnm-rgb), 0.055); border-left: 1px solid rgba(var(--chnm-rgb), 0.18); border-radius: 0 6px 6px 0; }
+
+.tl-phases { display: grid; grid-template-columns: var(--tl-label) repeat(var(--tl-cols), minmax(0, 1fr)); margin-bottom: clamp(4px, 0.8vh, 8px); }
+.tl-phases .ph { grid-column: var(--s) / var(--e); grid-row: 1; display: flex; align-items: center; justify-content: center; min-width: 0; height: clamp(20px, 2.6vh, 28px); padding: 0 10px; border-radius: 5px; font-family: var(--font-mono); font-size: clamp(9px, 0.84vw, 13px); font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: #fff; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.tl-phases .ph.both { background: linear-gradient(90deg, var(--ashp) 0%, var(--ashp) 48%, var(--chnm) 52%, var(--chnm) 100%); }
+.tl-phases .ph.chnm { background: rgba(var(--chnm-rgb), 0.9); }
+
+/* The anchor treatment now marks the founding bars as well as Safley's. */
+.tl-row.ashp.anchor .tl-bar { box-shadow: 0 0 0 2px rgba(var(--ashp-rgb), 0.22); }
+
+body.overview section.slide .content .tl-phases { display: none !important; }
+
+/* Brier & Brown's four tasks: the task name and its status, nothing else. */
+.content .plan-lede { font-size: var(--fs-body-compact); color: var(--muted); margin-bottom: clamp(4px, 0.8vh, 10px); max-width: 70ch; }
+.status-list strong { margin-bottom: 0; font-size: clamp(22px, 2.1vw, 35px); }
+.status-list .figs { display: block; margin-top: 5px; font-family: var(--font-mono); font-size: clamp(13px, 1.15vw, 19px); letter-spacing: 0.04em; color: var(--muted); }
+.status-list li.undone .figs { color: var(--rust); }
+.status-list li { align-items: center; padding-block: clamp(13px, 2.2vh, 24px); }
+body.overview section.slide .content .plan-lede { display: none !important; }
+
+/* Roles that straddle both institutions — the managing directors and the
+   co-PIs — get the same split fill the Collection phase band uses. */
+.tl-row.both .tl-bar { background: linear-gradient(90deg, var(--chnm) 0%, var(--chnm) 46%, var(--ashp) 54%, var(--ashp) 100%); }
+.tl-key.both { color: var(--fg-strong); border-color: var(--stroke); background: linear-gradient(90deg, rgba(var(--chnm-rgb), 0.12), rgba(var(--ashp-rgb), 0.12)); padding-left: 13px; }
+
+/* Fifteen rows now, so the bars have to give up some height. */
+.tl-bar { height: clamp(19px, 2.9vh, 31px); }
+.tl-row.anchor .tl-bar { height: clamp(22px, 3.3vh, 36px); }
+.tl-name { font-size: clamp(10px, 0.92vw, 15px); }
+.tl-grid { gap: clamp(2px, 0.42vh, 5px); }
+
+/* A two- or three-year bar cannot hold its own label, so the role sits beside
+   the bar instead of being clipped inside it. */
+.tl-role { grid-column: var(--s) / -1; grid-row: 1; align-self: center; padding-left: clamp(7px, 0.8vw, 12px); font-size: clamp(10px, 0.9vw, 15px); line-height: 1.1; color: var(--muted); white-space: nowrap; min-width: 0; }
+.tl-role.left { grid-column: 2 / var(--e); padding-left: 0; padding-right: clamp(7px, 0.8vw, 12px); text-align: right; }
+
+/* A hard 50/50 split reads as "two institutions"; a soft one reads as mud. */
+.tl-row.both .tl-bar { background: linear-gradient(90deg, var(--chnm) 0 50%, var(--ashp) 50% 100%); }
+
+/* "What read it": the tools on the left, what running them locally bought us
+   on the right, and the two units that hosted the work underneath. */
+.run-cols { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(420px, 100%), 1fr)); gap: clamp(14px, 2.2vw, 38px); margin-top: clamp(6px, 1.2vh, 14px); }
+.run-cols > * { min-width: 0; margin-top: 0; }
+.pipeline.plain li { border: 0; border-left: 3px solid rgba(var(--accent-rgb), 0.5); border-radius: 3px 9px 9px 3px; background: linear-gradient(90deg, rgba(var(--accent-rgb), 0.07), rgba(var(--accent-rgb), 0)); }
+.pipeline.plain .tool { font-family: var(--font-body); font-weight: 700; color: var(--fg-strong); }
+
+.credit-units .unit-chip { flex-direction: column; gap: 7px; align-items: center; justify-content: center; padding: clamp(10px, 1.4vh, 16px) clamp(14px, 1.6vw, 22px); text-decoration: none; }
+.credit-units .unit-chip span { font-family: var(--font-mono); font-size: clamp(11px, 0.95vw, 15px); color: var(--accent-deep); letter-spacing: 0.02em; }
+.credit-units .unit-chip:hover { border-color: rgba(var(--accent-rgb), 0.5); background: var(--accent-wash); }
+
+body.overview section.slide .content .run-cols { display: none !important; }

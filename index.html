@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
-  <link rel="stylesheet" href="src/styles.css?v=20260910d" />
+  <link rel="stylesheet" href="src/styles.css?v=20260910s" />
 </head>
 <body>
 <div id="image-lightbox" class="lightbox" aria-hidden="true">
@@ -46,11 +46,10 @@
         <div class="title-card">
           <div class="title-logo-row">
             <img src="images/ashp-logo.png" alt="American Social History Project / Center for Media and Learning">
-            <img src="images/rrchnm-logo.png" alt="Roy Rosenzweig Center for History and New Media">
           </div>
           <div class="eyebrow">Panel Discussion · Elebash Recital Hall · September 10, 2026</div>
           <h1><span class="title-line">The Afterlives of the</span><span class="title-line">September 11 Digital Archive</span></h1>
-          <p class="panelists"><strong>Stefano Morello</strong> — Director for Digital Projects, ASHP&#8202;/&#8202;CML</p>
+          <p class="panelists"><strong>Stefano Morello</strong> — Director, ASHP&#8202;/&#8202;CML</p>
           <p class="institution">The Graduate Center, City University of New York</p>
           <a class="title-link" href="https://911digitalarchive.org" target="_blank" rel="noopener">911digitalarchive.org</a>
         </div>
@@ -58,63 +57,76 @@
     </figure>
   </section>
 
-  <!-- ======================= 2. CREDITS / ROSTER ======================= -->
-  <section class="slide placeholder-slide crowded" data-slide="roster" aria-label="Who kept the archive alive, 2002 to tonight">
+  <!-- ====================== 2. CREDITS / TIMELINE ====================== -->
+  <section class="slide placeholder-slide crowded timeline-slide" data-slide="roster" aria-label="Who kept the archive alive: a timeline of everyone who worked on it between 2002 and tonight, colour-coded by institution">
     <div class="content">
-      <div class="label">Credits</div>
-      <h1>Who kept it alive</h1>
-      <ul class="roster">
-        <li><span class="era">2002–2005</span><span class="who"><em>CHNM —</em> <strong>Roy Rosenzweig</strong>, <strong>Daniel Cohen</strong>, <strong>T. Mills Kelly</strong>, <strong>Joan Fragaszy</strong> (program manager), <strong>Marty Andolino</strong>, <strong>Rikk Mulligan</strong>, <strong>Jim Safley</strong></span></li>
-        <li><span class="era">2002–2005</span><span class="who"><em>ASHP —</em> <strong>Joshua Brown</strong> (co-PI), <strong>Pennee Bender</strong>, <strong>Ellen Noonan</strong>, <strong>Andrea Ades Vasquez</strong>, <strong>Stephen Brier</strong></span></li>
-        <li class="now"><span class="era">2005–present</span><span class="who"><strong>Jim Safley</strong> <em>— lead developer and digital archivist. Twenty-one years on this project.</em></span></li>
-        <li><span class="era">2006–2014</span><span class="who"><strong>Ammon Shepherd</strong> <em>— system administrator</em></span></li>
-        <li><span class="era">2006–2019</span><span class="who"><strong>Ken Albers</strong>, <strong>Alyssa Fahringer</strong>, <strong>Ben Schneider</strong>, <strong>Jeri Wieringa</strong> <em>— project associates and graduate research assistants</em></span></li>
-        <li><span class="era">2008–2018</span><span class="who"><strong>Sheila Brennan</strong> <em>— co-director and administrator, RRCHNM</em></span></li>
-        <li><span class="era">2011–2017</span><span class="who"><strong>Sharon Leon</strong> <em>— co-director, Public Projects, RRCHNM</em></span></li>
-        <li><span class="era">2020–2022</span><span class="who"><strong>Megan Brett</strong> <em>— project manager, RRCHNM</em></span></li>
-        <li class="now"><span class="era">2022–present</span><span class="who"><strong>Jessica Otis</strong> <em>— project administrator, RRCHNM</em></span></li>
-        <li class="now"><span class="era">present</span><span class="who"><strong>Tony Trinh</strong>, <strong>Jason Heppler</strong>, <strong>Savannah Scott</strong> (summers) <em>— RRCHNM</em></span></li>
-      </ul>
-      <p class="roster-note">The people who kept this archive running for twenty-five years are not on this stage. RRCHNM has carried the maintenance burden — and the fundraising for it — for the past decade.</p>
+      <div class="tl-topline">
+        <div>
+          <div class="label">2002 &ndash; tonight</div>
+          <h1>Credits (partial)</h1>
+        </div>
+        <div class="tl-legend">
+          <span class="tl-key ashp"><img src="images/ashp-logo.png" alt="">ASHP&#8202;/&#8202;CML</span>
+          <span class="tl-key chnm"><img src="images/rrchnm-logo.png" alt="">CHNM &rarr; RRCHNM</span>
+          <span class="tl-key both">Both</span>
+        </div>
+      </div>
+
+      <div class="timeline" role="img" aria-label="Timeline 2001 to 2026. The Archive was collected 2002 to 2005 by CHNM and ASHP jointly, with Tom Scheinfeldt and Greg Fritz Umbach as managing directors and Roy Rosenzweig and Joshua Brown as co-principal investigators. From 2005 onward every role is CHNM, later RRCHNM. Jim Safley's bar runs unbroken from 2002 to the present.">
+        <div class="tl-scale" aria-hidden="true">
+          <span style="--s:2">2001</span>
+          <span style="--s:6">2005</span>
+          <span style="--s:11">2010</span>
+          <span style="--s:16">2015</span>
+          <span style="--s:21">2020</span>
+          <span style="--s:26">2025</span>
+        </div>
+        <div class="tl-grid">
+          <div class="tl-marks" aria-hidden="true">
+            <i style="--s:2"><b>Archive launched</b></i>
+            <i style="--s:12"><b>Omeka migration</b></i>
+            <i style="--s:27"><b>Tonight</b></i>
+            <span class="tl-band both" style="--s:2;--e:7"></span>
+            <span class="tl-band chnm" style="--s:7;--e:28"></span>
+          </div>
+
+          <div class="tl-phases" aria-hidden="true">
+            <span class="ph both" style="--s:2;--e:7">Collection</span>
+            <span class="ph chnm" style="--s:7;--e:28">Stewardship</span>
+          </div>
+
+          <div class="tl-row both"><span class="tl-name">Tom Scheinfeldt, Greg &ldquo;Fritz&rdquo; Umbach</span><span class="tl-bar" style="--s:3;--e:7">Managing directors</span></div>
+          <div class="tl-row both"><span class="tl-name">Roy Rosenzweig, Joshua Brown</span><span class="tl-bar" style="--s:3;--e:7">Co-PIs</span></div>
+          <div class="tl-row chnm"><span class="tl-name">Daniel Cohen, T. Mills Kelly, Marty Andolino, Joan Fragaszy, Rikk Mulligan</span><span class="tl-bar" style="--s:3;--e:7">Original project team</span></div>
+          <div class="tl-row ashp"><span class="tl-name">Pennee Bender, Ellen Noonan, Andrea Ades Vasquez, Stephen Brier</span><span class="tl-bar" style="--s:3;--e:7">Original project team</span></div>
+          <div class="tl-row chnm anchor"><span class="tl-name">Jim Safley</span><span class="tl-bar" style="--s:3;--e:28">Archive specialist, then lead developer and digital archivist</span></div>
+          <div class="tl-row chnm"><span class="tl-name">Ammon Shepherd</span><span class="tl-bar" style="--s:7;--e:16">System administrator</span></div>
+          <div class="tl-row chnm"><span class="tl-name">Ken Albers</span><span class="tl-bar" style="--s:7;--e:10"></span><span class="tl-role" style="--s:10">Graduate research assistant</span></div>
+          <div class="tl-row chnm"><span class="tl-name">Sheila Brennan</span><span class="tl-bar" style="--s:9;--e:20">Co-director and administrator</span></div>
+          <div class="tl-row chnm"><span class="tl-name">Sharon Leon</span><span class="tl-bar" style="--s:12;--e:19">Co-director</span></div>
+          <div class="tl-row chnm"><span class="tl-name">Ben Schneider</span><span class="tl-bar" style="--s:14;--e:16"></span><span class="tl-role" style="--s:16">Project associate</span></div>
+          <div class="tl-row chnm"><span class="tl-name">Alyssa Fahringer</span><span class="tl-bar" style="--s:15;--e:21">Project associate</span></div>
+          <div class="tl-row chnm"><span class="tl-name">Jeri Wieringa</span><span class="tl-bar" style="--s:15;--e:17"></span><span class="tl-role" style="--s:17">Project associate</span></div>
+          <div class="tl-row chnm"><span class="tl-name">Megan Brett</span><span class="tl-bar" style="--s:21;--e:24">Project manager</span></div>
+          <div class="tl-row chnm"><span class="tl-name">Jessica Otis</span><span class="tl-bar" style="--s:23;--e:28">Project administrator</span></div>
+          <div class="tl-row chnm"><span class="tl-name">Tony Trinh, Jason Heppler, Savannah Scott</span><span class="tl-bar" style="--s:26;--e:28"></span><span class="tl-role left" style="--e:26">Project team</span></div>
+        </div>
+      </div>
     </div>
     <figure class="stage blank-stage" aria-hidden="true"></figure>
   </section>
 
-  <!-- =================== 3. STEWARDSHIP / THE QUESTION =================== -->
-  <section class="slide placeholder-slide statement" data-slide="stewardship" aria-label="Who is ultimately responsible over this timescale?">
+  <!-- ============= 3. BRIER & BROWN'S FINAL CHALLENGING TASKS ============= -->
+  <section class="slide placeholder-slide crowded" data-slide="plan-2011" aria-label="The final challenging tasks named by Brier and Brown in 2011, scored today">
     <div class="content">
-      <div class="label">Stewardship</div>
-      <h1>Who is ultimately responsible over this timescale?</h1>
-      <p>Honestly? For most of the last twenty years the answer is: <strong>whoever happened to still be there.</strong> That worked. It is not a plan.</p>
-    </div>
-    <figure class="stage bignum-stage" aria-label="Twenty-one years: the length of Jim Safley's tenure on the project">
-      <div class="bignum">21</div>
-      <p class="bignum-cap">years one developer has stayed with this project. That is the institutional stewardship model.</p>
-    </figure>
-  </section>
-
-  <section class="slide placeholder-slide statement crowded" data-slide="provenance" aria-label="The archive could not tell me who had maintained it">
-    <div class="content">
-      <div class="label">Stewardship</div>
-      <blockquote>
-        <p>When I went to find out who had maintained this archive,</p>
-        <p>the archive couldn't tell me. I had to email someone.</p>
-      </blockquote>
-      <cite>Provenance is measurable — and it is missing</cite>
-    </div>
-    <figure class="stage blank-stage" aria-hidden="true"></figure>
-  </section>
-
-  <!-- ===================== 4. THE 2011 PLAN, SCORED ===================== -->
-  <section class="slide placeholder-slide crowded" data-slide="plan-2011" aria-label="The four tasks set out in 2011, scored today">
-    <div class="content">
-      <div class="label">The record</div>
-      <h1>The 2011 plan, scored today</h1>
+      <div class="label">Brier &amp; Brown, 2011</div>
+      <h1>&ldquo;Final challenging tasks&rdquo;</h1>
+      <p class="plan-lede">Steve Brier and Joshua Brown named four of them in their 2011 article about the Archive.</p>
       <ul class="status-list">
-        <li class="done"><span class="tag">Done</span><span class="body"><strong>Migration to open-source infrastructure</strong>Save America's Treasures (National Park Service) and NEH funded the move to Omeka and the relaunch. The site you can visit tonight exists because of Sharon Leon, Sheila Brennan and Jim Safley. This is what people mean when they say the archive <em>survived</em>.</span></li>
-        <li class="done"><span class="tag">Done</span><span class="body"><strong>Long-term preservation of the files</strong>And I can prove it — every byte verified against its checksum.</span></li>
-        <li class="undone"><span class="tag">Not done</span><span class="body"><strong>Metadata enhancement</strong>Zero tags. Twenty-four dates. Eighteen fields. This is the one that never got funded, and it is the one that decides whether anyone can find anything.</span></li>
-        <li class="partial"><span class="tag">Partly</span><span class="body"><strong>Redesign of the public interface</strong>Yes — in 2011. It is a 2011 interface.</span></li>
+        <li class="done"><span class="tag">Done</span><span class="body"><strong>Migration to open-source infrastructure</strong><span class="figs">Save America's Treasures (NPS) and NEH funded the move to Omeka and the relaunch &middot; Sharon Leon, Sheila Brennan, Jim Safley</span></span></li>
+        <li class="done"><span class="tag">Done</span><span class="body"><strong>Long-term preservation</strong></span></li>
+        <li class="undone"><span class="tag">Not done</span><span class="body"><strong>Metadata enhancement</strong></span></li>
+        <li class="partial"><span class="tag">Partly</span><span class="body"><strong>Redesign of the public interface</strong></span></li>
       </ul>
     </div>
     <figure class="stage blank-stage" aria-hidden="true"></figure>
@@ -124,7 +136,6 @@
     <div class="content">
       <div class="label">And one nobody planned for</div>
       <h1>It became possible for a machine to read the archive.</h1>
-      <h2>The handwriting. The voicemails. The photographs. That changes which of the remaining tasks are hard.</h2>
     </div>
   </section>
 
@@ -135,36 +146,37 @@
       <h1>What we pulled</h1>
       <ul class="ledger">
         <li><span class="k">Items returned by the API</span><span class="v">70,359</span></li>
-        <li><span class="k">Items flagged public in Omeka<em>The two numbers agree — nothing is being withheld by the platform</em></span><span class="v">70,359</span></li>
-        <li><span class="k">Files<em>Every one verified against its checksum</em></span><span class="v">67,609<small>150.7 GB</small></span></li>
+        <li><span class="k">Files</span><span class="v">67,609<small>150.7 GB</small></span></li>
         <li class="flag"><span class="k">Distinct file content by SHA-256<em>779 files are duplicates of something already in the set</em></span><span class="v">66,830</span></li>
       </ul>
     </div>
     <figure class="stage blank-stage" aria-hidden="true"></figure>
   </section>
 
-  <!-- =========================== 6. PIPELINE =========================== -->
-  <section class="slide placeholder-slide figure-side" data-slide="pipeline" data-link="https://ailab.gc.cuny.edu/models/" data-link-label="ailab.gc.cuny.edu/models" aria-label="The reading pipeline: which model read what">
+  <!-- ==================== 5. PIPELINE + WHERE IT RAN ==================== -->
+  <section class="slide placeholder-slide crowded" data-slide="pipeline" data-link="https://ailab.gc.cuny.edu" data-link-label="ailab.gc.cuny.edu" data-secondary-link="https://cuny.is/nml" data-secondary-link-label="cuny.is/nml" aria-label="What read the archive, and where it ran">
     <div class="content">
       <div class="label">Method</div>
       <h1>What read it</h1>
-      <ul class="pipeline">
-        <li><span class="tool">GLM-OCR<span class="where">run locally</span></span><span class="what">Handwriting, image transcription, and alt text</span></li>
-        <li><span class="tool">Whisper<span class="where">run locally</span></span><span class="what">Voicemails, interviews, recordings</span></li>
-        <li><span class="tool">PDF remediation<span class="where">CUNY AI Lab</span></span><span class="what">Scanned documents made accessible and searchable</span></li>
-      </ul>
-      <div class="qr-row tight">
-        <img src="images/cail-models-qr.png" alt="QR code linking to the CUNY AI Lab model registry at ailab.gc.cuny.edu/models">
-        <p><strong>Every model is on the record.</strong>The CUNY AI Lab publishes which model produced which output, at which version — <a href="https://ailab.gc.cuny.edu/models/" target="_blank" rel="noopener">ailab.gc.cuny.edu/models</a></p>
+      <p class="plan-lede">Every model is open-weights and ran locally, on hardware in the New Media Lab.</p>
+      <div class="run-cols">
+        <ul class="pipeline">
+          <li><span class="tool">GLM-OCR</span><span class="what">Handwriting, image transcription, and alt text</span></li>
+          <li><span class="tool">Whisper</span><span class="what">Voicemails, interviews, recordings</span></li>
+          <li><span class="tool">PDF remediation</span><span class="what">Scanned documents made accessible and searchable</span></li>
+        </ul>
+        <ul class="pipeline plain">
+          <li><span class="tool">Nothing left the building</span><span class="what">An archive full of names, addresses and phone numbers was never transmitted to a third party</span></li>
+          <li><span class="tool">Nothing depends on a vendor</span><span class="what">The same models, at the same versions, can be re-run in five years</span></li>
+          <li><span class="tool">Nothing is unaffordable</span><span class="what">Reading is no longer the expensive part &mdash; human judgement is</span></li>
+        </ul>
+      </div>
+      <div class="credit-units">
+        <a class="unit-chip" href="https://ailab.gc.cuny.edu" target="_blank" rel="noopener"><img src="images/cail-logo.png" alt="CUNY AI Lab"><span>ailab.gc.cuny.edu</span></a>
+        <a class="unit-chip" href="https://cuny.is/nml" target="_blank" rel="noopener"><img src="images/nml-logo.png" alt="New Media Lab"><span>cuny.is/nml</span></a>
       </div>
     </div>
-    <figure class="stage closing-stage" aria-label="CUNY AI Lab and its PDF accessibility tool">
-      <img src="images/cail-logo.png" alt="CUNY AI Lab">
-      <figcaption class="stage-note">
-        <img src="images/pdf-tool-qr.png" alt="QR code linking to the CUNY AI Lab PDF accessibility tool">
-        <span><strong>PDF accessibility tool</strong><a href="https://tools.ailab.gc.cuny.edu/pdf-accessibility/" target="_blank" rel="noopener">tools.ailab.gc.cuny.edu/pdf-accessibility</a>Built at the Lab, open to anyone at CUNY.</span>
-      </figcaption>
-    </figure>
+    <figure class="stage blank-stage" aria-hidden="true"></figure>
   </section>
 
   <!-- ========================= 7. WHAT CAME BACK ========================= -->
@@ -219,22 +231,6 @@
     </figure>
   </section>
 
-  <section class="slide placeholder-slide figure-side" data-slide="local" data-link="https://cuny.is/nml" data-link-label="cuny.is/nml" aria-label="Everything ran locally in the New Media Lab">
-    <div class="content">
-      <div class="label">Where it ran</div>
-      <h1>All of it, on our own machines</h1>
-      <p>Every model in this pipeline is open-weights and ran locally, on hardware in the <strong>New Media Lab</strong> at the Graduate Center. No commercial API. No per-item metering. Nothing sent to a vendor.</p>
-      <ul class="pipeline">
-        <li><span class="tool">Nothing left the building</span><span class="what">Handwriting, voicemails, and photographs from an archive full of names, addresses and phone numbers were never transmitted to a third party</span></li>
-        <li><span class="tool">Nothing depends on a vendor</span><span class="what">The same models, at the same versions, can be re-run in five years — an API endpoint cannot promise that</span></li>
-        <li><span class="tool">Nothing is unaffordable</span><span class="what">Reading is no longer the expensive part. Human judgement is</span></li>
-      </ul>
-    </div>
-    <figure class="stage figure-stage logo-photo-stage" aria-label="The New Media Lab at the CUNY Graduate Center">
-      <img class="brand-mark" src="images/nml-logo.png" alt="New Media Lab, CUNY Graduate Center">
-      <img class="brand-photo" src="images/nml-lab.jpg" alt="Students and faculty at workstations in the New Media Lab at the Graduate Center">
-    </figure>
-  </section>
 
   <!-- ======================= 9. THE REVIEW TIERS ======================= -->
   <section class="slide slide-break" data-slide="break-review" aria-label="Section break: none of this is publishable yet">
@@ -441,18 +437,14 @@
   </section>
 
   <!-- =========================== 13. CLOSING =========================== -->
-  <section class="slide placeholder-slide figure-side" data-slide="closing" data-link="https://911digitalarchive.org" data-secondary-link="https://ailab.gc.cuny.edu/models/" data-secondary-link-label="ailab.gc.cuny.edu/models" aria-label="Closing: thank you and links">
+  <section class="slide placeholder-slide figure-side" data-slide="closing" data-link="https://911digitalarchive.org" aria-label="Closing: thank you and links">
     <div class="content">
       <div class="label">Thank you</div>
       <h1>Stefano Morello</h1>
-      <p>Director for Digital Projects<br>American Social History Project&#8202;/&#8202;Center for Media and Learning<br>The Graduate Center, CUNY</p>
+      <p>Director<br>American Social History Project&#8202;/&#8202;Center for Media and Learning<br>The Graduate Center, CUNY</p>
       <div class="qr-row tight">
         <img src="images/archive-qr.png" alt="QR code linking to 911digitalarchive.org">
         <p><strong>The September 11 Digital Archive</strong><a href="https://911digitalarchive.org" target="_blank" rel="noopener">911digitalarchive.org</a></p>
-      </div>
-      <div class="qr-row tight">
-        <img src="images/cail-models-qr.png" alt="QR code linking to the CUNY AI Lab model registry">
-        <p><strong>CUNY AI Lab model registry</strong><a href="https://ailab.gc.cuny.edu/models/" target="_blank" rel="noopener">ailab.gc.cuny.edu/models</a></p>
       </div>
     </div>
     <figure class="stage closing-stage" aria-label="Partner logos: ASHP/CML, RRCHNM, and the CUNY AI Lab">
@@ -468,20 +460,20 @@
   <div class="footer-slider">
     <button class="footer-arrow" id="btn-prev" aria-label="Previous slide">&#8592;</button>
     <div class="slider-track">
-      <input type="range" id="slide-scrubber" min="1" max="30" value="1" aria-label="Navigate to slide">
+      <input type="range" id="slide-scrubber" min="1" max="27" value="1" aria-label="Navigate to slide">
       <div class="slider-progress"></div>
       <div class="slider-thumb"></div>
     </div>
     <button class="footer-arrow" id="btn-next" aria-label="Next slide">&#8594;</button>
     <button class="footer-arrow" id="btn-fullscreen" aria-label="Toggle fullscreen" title="Toggle fullscreen (F)">&#9974;</button>
     <div class="footer-meta">
-      <span id="slider-counter">1 / 30</span>
+      <span id="slider-counter">1 / 27</span>
       <span class="kbd">Space</span>
     </div>
   </div>
 </footer>
 
-<script src="src/slides.js?v=20260910d"></script>
+<script src="src/slides.js?v=20260910s"></script>
 <script>
 /* Title background — "Index Sweep".
    A field of marks, one per sampled item in the archive. Most sit dark: held,
