@@ -76,15 +76,23 @@ The interface: yes, it was redesigned. In 2011. It is a 2011 interface.
 
 ---
 
-## Slide 4 — It became possible for a machine to read the archive
+## Between slides 3 and 4 — the turn (no slide)
 
-The thing nobody in 2011 could have anticipated. Only the headline is on the
-slide; the rest is yours to say.
+**This is the hinge of the talk. Say it with nothing on the screen.**
 
-The handwriting. The voicemails. The photographs. All of it, readable by a
-machine. That changes *which* of the remaining tasks are hard — not by making
-the archive more valuable, but by moving the cost of reading it from
-"unaffordable" to an afternoon of GPU time in the New Media Lab.
+The four tasks Brier and Brown named in 2011 are still the right list. What
+none of them could have anticipated is that it would become possible for a
+machine to *read* the archive.
+
+The handwriting. The voicemails. The photographs. All of it, readable.
+
+That changes which of the remaining tasks are hard — not by making the Archive
+more valuable, but by moving the cost of reading it from unaffordable to an
+afternoon of GPU time in the New Media Lab. Metadata was the task that never got
+funded because it was the task that could not be automated. That is no longer
+true.
+
+Then advance to Data.
 
 **Say what it bought us: discoverability and accessibility.** The two tasks
 Brier and Brown left open — metadata and the interface — both come down to
@@ -103,13 +111,13 @@ makes the discoverability work fundable. Same labor, two arguments.
 
 ---
 
-## Slides 5–7 — What we pulled / what read it / what came back
+## Slides 4–6 — Data / Processing / Output
 
 Keep this fast. It is evidence that the pipeline is real, not the point of the
 talk.
 
-**Slide 6 carries the local-processing argument.** Three words are on the
-slide; here is what each one means.
+**Slide 5 (Processing) carries the local-model argument.** Three words are on
+the slide; here is what each one means.
 
 **Privacy.** The Archive is full of people's names, home addresses, phone
 numbers and voices. Because the models run on our own hardware, none of that
@@ -144,7 +152,7 @@ articulate it.
 
 ---
 
-## Slide 8 — Recovery, Review, and Remediation
+## Slide 7 — Recovery, Review, and Remediation
 
 Just the list on screen. Everything below is yours to say.
 
@@ -160,7 +168,7 @@ Material that had effectively left the Archive while still sitting on the disk.
 
 ---
 
-## Slide 9 — Tier 1, Review: Personally identifiable information
+## Slide 8 — Tier 1, Review: Personally identifiable information
 
 Title and the triage screens only. All of this is spoken.
 
@@ -183,7 +191,7 @@ thousands of separate judgements.
 
 ---
 
-## Slide 10 — Tier 2, Quality review (Is the machine right?)
+## Slide 9 — Tier 2, Quality review (Is the machine right?)
 
 Title and the dashboard only.
 
@@ -195,14 +203,14 @@ showing you almost entirely zeros, and that is the honest state of it.
 corrected transcript is stored *beside* it, with who corrected it and when. That
 is the provenance point from slide 2, answered.
 
-Say this here rather than on slide 11, since the dashboard is what makes it
+Say this here rather than on slide 10, since the dashboard is what makes it
 concrete.
 
 ---
 
-## Slide 11 — Tier 2 continued, the review interface
+## Slide 10 — Tier 2 continued, the review interface
 
-Deliberately carries the same title as slide 10. Slide 10 counts the checking;
+Deliberately carries the same title as slide 9. Slide 9 counts the checking;
 this one shows the tool that does it. Same tier, same heading, so it reads as a
 continuation rather than a new topic.
 
@@ -217,7 +225,7 @@ Click any screenshot to zoom it full-screen if someone asks for detail.
 
 ---
 
-## Slide 12 — Tier 3, Metadata Enhancement
+## Slide 11 — Tier 3, Metadata Enhancement
 
 On the slide: now that every item has text, writing (or inferring) metadata
 for discoverability and accessibility becomes far easier. That is the whole
@@ -227,7 +235,7 @@ Eighteen fields and twenty-four usable dates, if anyone asks for the rest.
 
 ---
 
-## Slide 13 — Tier 4, New opportunities for interpretation
+## Slide 12 — Tier 4, New opportunities for interpretation
 
 Five rows on the slide. Move briskly — these are illustrations of what becomes
 possible, not results. Nobody has run any of them yet. Say so.

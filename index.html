@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
-  <link rel="stylesheet" href="src/styles.css?v=20260911t" />
+  <link rel="stylesheet" href="src/styles.css?v=20260911w" />
 </head>
 <body>
 <div id="image-lightbox" class="lightbox" aria-hidden="true">
@@ -132,18 +132,11 @@
     <figure class="stage blank-stage" aria-hidden="true"></figure>
   </section>
 
-  <section class="slide slide-break" data-slide="break-anticipated" aria-label="Section break: the thing nobody could have anticipated">
-    <div class="content">
-      <div class="label">And one nobody planned for</div>
-      <h1>It became possible for a machine to read the archive.</h1>
-    </div>
-  </section>
 
   <!-- ========================= 5. WHAT WE PULLED ========================= -->
   <section class="slide placeholder-slide crowded" data-slide="pulled" data-link="https://911digitalarchive.org" aria-label="What we pulled from the archive">
     <div class="content">
-      <div class="label">Method</div>
-      <h1>What we pulled</h1>
+      <h1>Data</h1>
       <ul class="ledger">
         <li><span class="k">Items returned by the API</span><span class="v">70,359</span></li>
         <li><span class="k">Files</span><span class="v">67,609<small>150.7 GB</small></span></li>
@@ -156,8 +149,7 @@
   <!-- ==================== 5. PIPELINE + WHERE IT RAN ==================== -->
   <section class="slide placeholder-slide crowded" data-slide="pipeline" data-link="https://ailab.gc.cuny.edu" data-link-label="ailab.gc.cuny.edu" data-secondary-link="https://cuny.is/nml" data-secondary-link-label="cuny.is/nml" aria-label="What read the archive, and where it ran">
     <div class="content">
-      <div class="label">Method</div>
-      <h1>What read it</h1>
+      <h1>Processing</h1>
       <p class="plan-lede">Every model is open-weights and ran locally, on hardware in the New Media Lab.</p>
       <div class="run-cols">
         <div class="run-col">
@@ -184,8 +176,7 @@
   <!-- ========================= 7. WHAT CAME BACK ========================= -->
   <section class="slide placeholder-slide crowded" data-slide="returned" aria-label="What the pipeline returned">
     <div class="content">
-      <div class="label">Result</div>
-      <h1>What came back</h1>
+      <h1>Output</h1>
       <ul class="figures">
         <li><span class="k">Handwritten card pages transcribed<em>&ldquo;How did you witness history on September 11, 2001?&rdquo;</em></span><span class="n">41,225</span></li>
         <li><span class="k">Hours of audio transcribed locally<em>Voicemails, interviews, recordings</em></span><span class="n">199</span></li>
@@ -308,20 +299,20 @@
   <div class="footer-slider">
     <button class="footer-arrow" id="btn-prev" aria-label="Previous slide">&#8592;</button>
     <div class="slider-track">
-      <input type="range" id="slide-scrubber" min="1" max="13" value="1" aria-label="Navigate to slide">
+      <input type="range" id="slide-scrubber" min="1" max="12" value="1" aria-label="Navigate to slide">
       <div class="slider-progress"></div>
       <div class="slider-thumb"></div>
     </div>
     <button class="footer-arrow" id="btn-next" aria-label="Next slide">&#8594;</button>
     <button class="footer-arrow" id="btn-fullscreen" aria-label="Toggle fullscreen" title="Toggle fullscreen (F)">&#9974;</button>
     <div class="footer-meta">
-      <span id="slider-counter">1 / 13</span>
+      <span id="slider-counter">1 / 12</span>
       <span class="kbd">Space</span>
     </div>
   </div>
 </footer>
 
-<script src="src/slides.js?v=20260911t"></script>
+<script src="src/slides.js?v=20260911w"></script>
 <script>
 /* Title background — "Index Sweep".
    A field of marks, one per sampled item in the archive. Most sit dark: held,
