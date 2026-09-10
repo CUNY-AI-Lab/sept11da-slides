@@ -49,6 +49,19 @@ three. Different work, different era, both real.
 **On funding.** Very different landscape now, both inside institutions and
 outside them, from twenty-five years ago. Jessica Otis is carrying that now.
 
+**What RRCHNM is doing right now** — say this here, plainly, while their names
+are on the screen. They have an active plan: Title II accessibility compliance,
+and flattening the site for long-term sustainability. That work is underway.
+
+**Where tonight's work came from.** This started in conversation with Anke, and
+I've discussed it with Katie Donia, an alumna of the GC's Master's degree in
+Data Analysis and Visualization who also works in Public Events. What I'm
+showing you is not a rival plan. We want to offer what we have to RRCHNM, to
+integrate into the preservation work they are already doing.
+
+Say this early and mean it. Nothing later in the deck should sound like a
+critique of the people maintaining the Archive.
+
 ---
 
 ## Slide 3 — "Final challenging tasks"
@@ -204,19 +217,9 @@ this audience.
 
 ## Slide 21 — Every visual walks back to the artifact
 
-The rule. A visualization that can't be walked back to the object is an
-assertion. Say the 6,761-cards example concretely.
-
----
-
-## Slide 22 — To their plan, not instead of it
-
-Say publicly and unambiguously: RRCHNM has an active plan — Title II
-accessibility compliance, and flattening the site for long-term sustainability.
-Ours is offered *to* it, not instead of it. We are seeking funding to do this
-work with them.
-
----
+The rule, and the last slide. A visualization that can't be walked back to the
+object is an assertion. Say the 6,761-cards example concretely, then stop —
+there is no thank-you slide, so land on this and hand back to the panel.
 
 ## Things to check before you go on
 
