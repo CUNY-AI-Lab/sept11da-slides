@@ -822,3 +822,12 @@ body.overview section.slide .content .review-kinds { display: none !important; }
    sits below a rule rather than reading as one more round of checking. */
 .tier-rail li.then { margin-top: clamp(8px, 1.4vh, 15px); border-top: 1px solid var(--rule); border-left-color: rgba(var(--accent-rgb), 0.55); background: rgba(var(--accent-rgb), 0.05); border-radius: 0 10px 10px 0; }
 .tier-rail li.then .t { color: var(--accent-deep); }
+
+/* With the descriptions gone these are three words, so they read as a stack of
+   headings rather than as cards with missing bodies. */
+.pipeline.plain li { display: flex; align-items: center; min-height: clamp(46px, 7vh, 74px); }
+.pipeline.plain .tool { margin-bottom: 0; font-size: clamp(20px, 2vw, 33px); }
+
+/* Three bare headings should sit against the middle of the column beside
+   them, not stack at the top of it. */
+.run-cols .pipeline.plain { align-content: center; }

@@ -167,13 +167,10 @@ Click any screenshot to zoom it full-screen if someone asks for detail.
 
 ---
 
-## Slide 13 — Multiplicity you can't search
+## After slide 12 — the plurality argument (no slide)
 
-This is the ask. None of it is publishable yet; a machine read it, and human
-judgement is what stands between that and anything a visitor should see.
-
-**Tier 3 (metadata)** is where to slow down. Everything above it was
-engineering. This one is scholarship.
+There is no slide for this any more. Land it on the blank screen after the
+review interface, before the Tier 4 break.
 
 **On plurality — this was a slide, now it is yours to say.** Deliver it as
 written; it is the argument of the talk:
@@ -191,7 +188,7 @@ Connects directly to Lisa's critique — don't soften it.
 
 ---
 
-## Slides 14–21 — Tier 4, the seven lenses
+## Slides 13–20 — Tier 4, the seven lenses
 
 Move briskly. These are illustrations of what becomes *askable*, not results.
 Nobody has run any of them yet. Say so.
@@ -201,18 +198,18 @@ responsibly claim the archive under-represents anything, because nobody could
 count. That's a methodological point, not a political one, and it lands with
 this audience.
 
-**Slide 21 — Iraq / FDNY: still a placeholder. Fill it or cut it.**
+**Slide 20 — Iraq / FDNY: still a placeholder. Fill it or cut it.**
 
 ---
 
-## Slide 22 — Every visual walks back to the artifact
+## Slide 21 — Every visual walks back to the artifact
 
 The rule. A visualization that can't be walked back to the object is an
 assertion. Say the 6,761-cards example concretely.
 
 ---
 
-## Slide 23 — To their plan, not instead of it
+## Slide 22 — To their plan, not instead of it
 
 Say publicly and unambiguously: RRCHNM has an active plan — Title II
 accessibility compliance, and flattening the site for long-term sustainability.
@@ -221,13 +218,9 @@ work with them.
 
 ---
 
-## Slide 24 — Thank you
-
----
-
 ## Things to check before you go on
 
-- [ ] Fill or cut the Iraq / FDNY lens (slide 21)
+- [ ] Fill or cut the Iraq / FDNY lens (slide 20)
 - [ ] Start year for Trinh, Heppler and Scott — the chart currently guesses 2025
 - [ ] Jim Safley's bar now runs 2002–present (24 years), per the staff list —
       he was Project Associate and Archive Specialist at CHNM from 2002. Your
