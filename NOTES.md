@@ -160,81 +160,140 @@ Material that had effectively left the Archive while still sitting on the disk.
 
 ---
 
-## Slides 9–11 — Tiers 1 to 3
+## Slide 9 — Tier 1, Personally identifiable information
 
-**Tier 1 (personal information)** lists examples rather than counts on purpose.
-The counts exist and are on the screenshot beside it if anyone asks: 157 where
-consent was refused, 168 minors who are directly reachable, 117 recordings with
-an address or phone number spoken aloud, and about 19,600 items in the queue
-overall.
+Title and the triage screens only. All of this is spoken.
 
-**Tier 3 (metadata)** is where to slow down. Everything above it was
-engineering. This one is scholarship. Eighteen fields, twenty-four usable dates,
-zero tags across seventy thousand items.
+Machine reading makes an archive searchable. It also makes it searchable for
+things a depositor in 2002 never imagined being findable.
+
+For example:
+
+- The depositor ticked *No* to consent
+- A minor who is directly reachable
+- An address or phone number spoken aloud in a recording
+- A full name and school written on a card
+- Contact details buried in a scanned document
+
+The counts are on the screen beside you if anyone asks: 157 where consent was
+refused, 168 minors who are directly reachable, 117 recordings with an address
+or phone number spoken aloud, and roughly 19,600 items in the queue overall.
+Most of it resolves through about ten bulk rules applied to categories, not
+thousands of separate judgements.
 
 ---
 
-## Slide 12 — The review interface
+## Slide 10 — Tier 2, Is the machine right?
 
-This is what we actually built, and it comes after the tiers so the audience
-already knows what the work consists of.
+Title and the dashboard only.
+
+An accuracy figure means nothing until enough has been checked. A hundred and
+fifty of a source is a defensible slice; ten is an anecdote. The dashboard is
+showing you almost entirely zeros, and that is the honest state of it.
+
+**The sentence to land:** the model's original output is never overwritten — a
+corrected transcript is stored *beside* it, with who corrected it and when. That
+is the provenance point from slide 2, answered.
+
+Say this here rather than on slide 11, since the dashboard is what makes it
+concrete.
+
+---
+
+## Slide 11 — The review interface
+
+Sits between Tier 2 and Tier 3: this is the tool that does the checking you just
+saw counted.
+
+**The sentence that used to be on the slide:** every item comes up beside what
+the model said about it. A reviewer judges the match, fixes the text if it is
+wrong, and the model's original output is kept either way.
 
 Press space three times. Each press names a kind of artifact and swaps the
 screenshot: handwriting, then photographs, then audio. Same interface each time.
-
-The thing to say: the model's original output is never overwritten. A corrected
-transcript is stored beside it, with who corrected it and when — so the archive
-can finally say where its own text came from. That is the provenance point from
-slide 2, answered.
 
 Click any screenshot to zoom it full-screen if someone asks for detail.
 
 ---
 
-## After slide 12 — the plurality argument (no slide)
+## Slide 12 — Tier 3, Metadata
 
-There is no slide for this any more. Land it on the blank screen after the
-review interface, before the Tier 4 break.
+On the slide: now that every item has text, writing — or inferring — metadata
+for discoverability and accessibility becomes far easier. That is the whole
+point. The stage shows zero tags across seventy thousand items.
 
-**On plurality — this was a slide, now it is yours to say.** Deliver it as
-written; it is the argument of the talk:
-
-> Multiplicity you can't search is functionally a singular.
->
-> The institutional narrative didn't defeat the plural archive. It just had
-> better retrieval.
->
-> Search is where an archive keeps its promise of plurality — or quietly stops
-> keeping it.
-
-Say it off the metadata tier, with nothing on the screen competing with it.
-Connects directly to Lisa's critique — don't soften it.
+Eighteen fields and twenty-four usable dates, if anyone asks for the rest.
 
 ---
 
-## Slides 13–20 — Tier 4, the seven lenses
+## Slide 13 — Tier 4, New opportunities for interpretation
 
-Move briskly. These are illustrations of what becomes *askable*, not results.
-Nobody has run any of them yet. Say so.
+All seven on one slide. Move briskly — these are illustrations of what becomes
+possible, not results. Nobody has run any of them yet. Say so.
 
-The one to dwell on if time allows is **absence**: until now nobody could
-responsibly claim the archive under-represents anything, because nobody could
-count. That's a methodological point, not a political one, and it lands with
-this audience.
+**01 · Naming the event over time.** "September 11" vs "9/11" vs "the attacks"
+vs "the towers" vs "Ground Zero" — when does the shorthand consolidate?
+Diachronic naming is the standard move in memory studies. What is unusual is the
+corpus: this is one of very few bodies of dated, ordinary, non-journalistic
+language about the event, written by people who were not being edited.
 
-**Slide 20 — Iraq / FDNY: still a placeholder. Fill it or cut it.**
+**02 · Distance.** About 20,000 hometowns. Map them, ring them by distance from
+Lower Manhattan, then ask the real question: does what people write vary by how
+far they travelled? A visitor from Nebraska and one from Jersey City are doing
+different things by standing in that room.
+
+**03 · Absence, measured rather than asserted.** With an index you can finally
+count what isn't here: backlash, Sikh and Arab American experience, the murder
+of Balbir Singh Sodhi, dissent, conspiracy, the wars that followed. Until now
+nobody could responsibly say the Archive under-represents anything, because
+nobody could count. A claim about silence in an archive should be a measurement,
+not a hunch. This is the one to dwell on if there is time.
+
+**04 · Languages.** Detect them across 51 million characters. There is a
+Chinatown oral history collection in here and an Italian-language Flash
+newscast. An English-only reading hides whoever else is in there — it is the
+difference between an archive of New York and an archive of English-speaking
+New York.
+
+**05 · Children's drawings.** A sketch flag is recorded per page and the pilot
+rate implies several thousand. Iconography over time — towers, planes, flags,
+hearts — a visual record of how children drew something most of them only saw on
+television.
+
+**06 · The archived web as a link graph.** 3,369 site captures, 55,825 members.
+Extract the hyperlinks and the shape of an early-2000s web neighbourhood comes
+back: who linked to whom, and what has since disappeared from the other end of
+those links.
+
+**07 · Iraq and the FDNY.** Still a placeholder. Fill it or cut the row.
 
 ---
 
-## Slide 21 — Every visual walks back to the artifact
+## Closing — the rule, spoken not shown
 
-The rule, and the last slide. A visualization that can't be walked back to the
-object is an assertion. Say the 6,761-cards example concretely, then stop —
-there is no thank-you slide, so land on this and hand back to the panel.
+There is no longer a slide for this. It is how you finish.
+
+Every visual must walk back to the artifact. If a chart says 6,761 cards in
+April 2003, clicking it gets you those cards, and clicking a card gets you the
+scan beside the transcript beside who corrected it.
+
+A visualization that cannot be walked back to the object is an assertion. The
+whole point of indexing a plural archive is that its claims stay auditable by
+the person reading them.
+
+**And the plurality argument**, if it has not already come up: multiplicity you
+can't search is functionally a singular. The institutional narrative didn't
+defeat the plural archive — it just had better retrieval. Search isn't a
+technical postscript to preservation; it's where an archive either keeps its
+promise of plurality or quietly stops keeping it.
+
+Then stop and hand back to the panel.
+
+---
 
 ## Things to check before you go on
 
-- [ ] Fill or cut the Iraq / FDNY lens (slide 20)
+- [ ] Fill or cut the Iraq / FDNY row (slide 13, item 07)
 - [ ] Start year for Trinh, Heppler and Scott — the chart currently guesses 2025
 - [ ] Jim Safley's bar now runs 2002–present (24 years), per the staff list —
       he was Project Associate and Archive Specialist at CHNM from 2002. Your
