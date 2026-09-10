@@ -217,9 +217,9 @@ Click any screenshot to zoom it full-screen if someone asks for detail.
 
 ---
 
-## Slide 12 — Tier 3, Metadata
+## Slide 12 — Tier 3, Metadata Enhancement
 
-On the slide: now that every item has text, writing — or inferring — metadata
+On the slide: now that every item has text, writing (or inferring) metadata
 for discoverability and accessibility becomes far easier. That is the whole
 point. The stage shows zero tags across seventy thousand items.
 
