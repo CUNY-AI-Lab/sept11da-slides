@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
-  <link rel="stylesheet" href="src/styles.css?v=20260910u" />
+  <link rel="stylesheet" href="src/styles.css?v=20260910y" />
 </head>
 <body>
 <div id="image-lightbox" class="lightbox" aria-hidden="true">
@@ -160,20 +160,22 @@
       <h1>What read it</h1>
       <p class="plan-lede">Every model is open-weights and ran locally, on hardware in the New Media Lab.</p>
       <div class="run-cols">
-        <ul class="pipeline">
-          <li><span class="tool">GLM-OCR</span><span class="what">Handwriting, image transcription, and alt text</span></li>
-          <li><span class="tool">Whisper</span><span class="what">Voicemails, interviews, recordings</span></li>
-          <li><span class="tool">PDF remediation</span><span class="what">Scanned documents made accessible and searchable</span></li>
-        </ul>
+        <div class="run-col">
+          <ul class="pipeline">
+            <li><span class="tool">GLM-OCR</span><span class="what">Handwriting, image transcription, and alt text</span></li>
+            <li><span class="tool">Whisper</span><span class="what">Voicemails, interviews, recordings</span></li>
+            <li><span class="tool">PDF remediation</span><span class="what">Scanned documents made accessible and searchable, with the PDF accessibility tool built by the <strong>CUNY AI Lab</strong></span></li>
+          </ul>
+          <div class="credit-units">
+            <a class="unit-chip" href="https://ailab.gc.cuny.edu" target="_blank" rel="noopener"><img src="images/cail-logo.png" alt="CUNY AI Lab"><span>ailab.gc.cuny.edu</span></a>
+            <a class="unit-chip" href="https://cuny.is/nml" target="_blank" rel="noopener"><img src="images/nml-logo.png" alt="New Media Lab"><span>cuny.is/nml</span></a>
+          </div>
+        </div>
         <ul class="pipeline plain">
-          <li><span class="tool">Nothing left the building</span><span class="what">An archive full of names, addresses and phone numbers was never transmitted to a third party</span></li>
-          <li><span class="tool">Nothing depends on a vendor</span><span class="what">The same models, at the same versions, can be re-run in five years</span></li>
-          <li><span class="tool">Nothing is unaffordable</span><span class="what">Reading is no longer the expensive part &mdash; human judgement is</span></li>
+          <li><span class="tool">Privacy</span><span class="what">The Archive is full of people&rsquo;s names, home addresses, phone numbers and voices. Because the models run on our own hardware, none of that was uploaded to an outside company.</span></li>
+          <li><span class="tool">Reproducibility</span><span class="what">Open-weights models can be kept and run again. If someone asks in five years how a transcript was produced, we can re-run the same model at the same version. A commercial service can change its model or shut down.</span></li>
+          <li><span class="tool">Cost</span><span class="what">Machine reading used to be the expensive part of a project this size. It isn&rsquo;t any more. The cost has moved to human review &mdash; checking the output, handling personal information, and improving the metadata.</span></li>
         </ul>
-      </div>
-      <div class="credit-units">
-        <a class="unit-chip" href="https://ailab.gc.cuny.edu" target="_blank" rel="noopener"><img src="images/cail-logo.png" alt="CUNY AI Lab"><span>ailab.gc.cuny.edu</span></a>
-        <a class="unit-chip" href="https://cuny.is/nml" target="_blank" rel="noopener"><img src="images/nml-logo.png" alt="New Media Lab"><span>cuny.is/nml</span></a>
       </div>
     </div>
     <figure class="stage blank-stage" aria-hidden="true"></figure>
@@ -473,7 +475,7 @@
   </div>
 </footer>
 
-<script src="src/slides.js?v=20260910u"></script>
+<script src="src/slides.js?v=20260910y"></script>
 <script>
 /* Title background — "Index Sweep".
    A field of marks, one per sampled item in the archive. Most sit dark: held,

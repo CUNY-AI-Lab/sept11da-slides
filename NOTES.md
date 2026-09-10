@@ -73,6 +73,21 @@ machine. That changes *which* of the remaining tasks are hard — not by making
 the archive more valuable, but by moving the cost of reading it from
 "unaffordable" to an afternoon of GPU time in the New Media Lab.
 
+**Say what it bought us: discoverability and accessibility.** The two tasks
+Brier and Brown left open — metadata and the interface — both come down to
+this, and accessibility comes along with them for free. Text that a machine can
+read is text a visitor can search, and text a screen reader can speak.
+Handwriting that was an image is now a string. A voicemail that was a waveform
+is now a transcript. Nothing about the holdings changed; what changed is that they can
+be found and they can be heard.
+
+**And this is not only our interest.** RRCHNM is working on bringing the
+Archive into compliance with the ADA Title II web accessibility rule — a legal
+obligation for a public institution, not a nice-to-have. Alt text, transcripts
+and captions at this scale were previously an unfunded mandate. Machine reading
+is what makes the compliance work tractable, and the compliance work is what
+makes the discoverability work fundable. Same labor, two arguments.
+
 ---
 
 ## Slides 5–7 — What we pulled / what read it / what came back
@@ -83,6 +98,15 @@ Media Lab hardware — the point isn't thrift, it's that an archive full of name
 addresses and phone numbers never went to a vendor, and that the same models at
 the same versions can be re-run in five years, which an API endpoint cannot
 promise.
+
+**Where this goes next — say it as a method, not a one-off.** The September 11
+Digital Archive is the case study, but the pipeline isn't specific to it. One of
+the things we're exploring through the CUNY AI Lab is using exactly this
+approach to recover older digital humanities projects: sites built on
+infrastructure nobody maintains any more, content locked in formats nothing
+reads, holdings with no metadata and no one left who remembers the schema. The
+field has twenty-five years of those. Reading them back has always been the
+part nobody could afford. That's the part that just got cheap.
 
 **For Tom** (say this to him directly, not to the room): your blog posts on
 using LLMs for digital scholarship were a breath of fresh air. Your team was

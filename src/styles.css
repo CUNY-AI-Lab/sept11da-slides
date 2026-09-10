@@ -785,3 +785,10 @@ body.overview section.slide .content .run-cols { display: none !important; }
    bars a smaller size rather than setting the role outside the bar. */
 .tl-bar.tight { font-size: clamp(8px, 0.66vw, 11px); padding: 0 clamp(4px, 0.45vw, 7px); letter-spacing: -0.005em; }
 .tl-row.both .tl-bar { font-size: clamp(8px, 0.74vw, 12px); }
+
+/* Grid rows stretch by default, so the three short tool cards were being
+   pulled to the height of the three long rationale cards and the whole panel
+   was auto-shrunk to compensate. Let each column keep its natural height. */
+.run-cols .pipeline { align-content: start; }
+.run-col { display: flex; flex-direction: column; min-width: 0; }
+.run-col .credit-units { margin-top: clamp(12px, 2vh, 22px); }
