@@ -232,11 +232,12 @@ Eighteen fields and twenty-four usable dates, if anyone asks for the rest.
 Five rows on the slide. Move briskly — these are illustrations of what becomes
 possible, not results. Nobody has run any of them yet. Say so.
 
-**01 · Naming the event over time.** "September 11" vs "9/11" vs "the attacks"
-vs "the towers" vs "Ground Zero" — when does the shorthand consolidate?
-Diachronic naming is the standard move in memory studies. What is unusual is the
-corpus: this is one of very few bodies of dated, ordinary, non-journalistic
-language about the event, written by people who were not being edited.
+**01 · Text analysis.** Naming the event over time is the obvious first pass:
+"September 11" vs "9/11" vs "the attacks" vs "the towers" vs "Ground Zero" —
+when does the shorthand consolidate? Diachronic naming is the standard move in
+memory studies. What is unusual is the corpus: this is one of very few bodies of
+dated, ordinary, non-journalistic language about the event, written by people
+who were not being edited.
 
 **02 · Mapping contributions.** About 20,000 hometowns. Map them, ring them by
 distance from Lower Manhattan, then ask the real question: does what people
@@ -250,7 +251,7 @@ say the Archive under-represents anything, because nobody could count. A claim
 about silence in an archive should be a measurement, not a hunch. This is the
 one to dwell on if there is time.
 
-**04 · Languages.** Detect them across 51 million characters. There is a
+**04 · Languages.** Detected across 51 million characters. There is a
 Chinatown oral history collection in here and an Italian-language Flash
 newscast. An English-only reading hides whoever else is in there — it is the
 difference between an archive of New York and an archive of English-speaking
