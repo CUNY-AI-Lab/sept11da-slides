@@ -229,7 +229,7 @@ Eighteen fields and twenty-four usable dates, if anyone asks for the rest.
 
 ## Slide 13 — Tier 4, New opportunities for interpretation
 
-All seven on one slide. Move briskly — these are illustrations of what becomes
+Five rows on the slide. Move briskly — these are illustrations of what becomes
 possible, not results. Nobody has run any of them yet. Say so.
 
 **01 · Naming the event over time.** "September 11" vs "9/11" vs "the attacks"
@@ -238,17 +238,17 @@ Diachronic naming is the standard move in memory studies. What is unusual is the
 corpus: this is one of very few bodies of dated, ordinary, non-journalistic
 language about the event, written by people who were not being edited.
 
-**02 · Distance.** About 20,000 hometowns. Map them, ring them by distance from
-Lower Manhattan, then ask the real question: does what people write vary by how
-far they travelled? A visitor from Nebraska and one from Jersey City are doing
-different things by standing in that room.
+**02 · Mapping contributions.** About 20,000 hometowns. Map them, ring them by
+distance from Lower Manhattan, then ask the real question: does what people
+write vary by how far they travelled? A visitor from Nebraska and one from
+Jersey City are doing different things by standing in that room.
 
-**03 · Absence, measured rather than asserted.** With an index you can finally
-count what isn't here: backlash, Sikh and Arab American experience, the murder
-of Balbir Singh Sodhi, dissent, conspiracy, the wars that followed. Until now
-nobody could responsibly say the Archive under-represents anything, because
-nobody could count. A claim about silence in an archive should be a measurement,
-not a hunch. This is the one to dwell on if there is time.
+**03 · Absence.** With an index you can finally count what isn't here:
+backlash, Sikh and Arab American experience, the murder of Balbir Singh Sodhi,
+dissent, conspiracy, the wars that followed. Until now nobody could responsibly
+say the Archive under-represents anything, because nobody could count. A claim
+about silence in an archive should be a measurement, not a hunch. This is the
+one to dwell on if there is time.
 
 **04 · Languages.** Detect them across 51 million characters. There is a
 Chinatown oral history collection in here and an Italian-language Flash
@@ -256,17 +256,16 @@ newscast. An English-only reading hides whoever else is in there — it is the
 difference between an archive of New York and an archive of English-speaking
 New York.
 
-**05 · Children's drawings.** A sketch flag is recorded per page and the pilot
-rate implies several thousand. Iconography over time — towers, planes, flags,
-hearts — a visual record of how children drew something most of them only saw on
-television.
+**05 · And more.** What is behind the catch-all, if anyone asks:
 
-**06 · The archived web as a link graph.** 3,369 site captures, 55,825 members.
-Extract the hyperlinks and the shape of an early-2000s web neighbourhood comes
-back: who linked to whom, and what has since disappeared from the other end of
-those links.
-
-**07 · Iraq and the FDNY.** Still a placeholder. Fill it or cut the row.
+- **Children's drawings.** A sketch flag is recorded per page and the pilot rate
+  implies several thousand. Towers, planes, flags, hearts — how children drew
+  something most of them only saw on television.
+- **The archived web as a link graph.** 3,369 site captures, 55,825 members.
+  Extract the hyperlinks and the shape of an early-2000s web neighbourhood comes
+  back: who linked to whom, and what has since disappeared from the other end of
+  those links.
+- **Iraq and the FDNY.** Still unwritten.
 
 ---
 
@@ -294,7 +293,7 @@ Then stop and hand back to the panel.
 
 ## Things to check before you go on
 
-- [ ] Fill or cut the Iraq / FDNY row (slide 13, item 07)
+- [ ] Iraq / FDNY now lives only under "And more" in the notes — write it up if you want to speak to it
 - [ ] Start year for Trinh, Heppler and Scott — the chart currently guesses 2025
 - [ ] Jim Safley's bar now runs 2002–present (24 years), per the staff list —
       he was Project Associate and Archive Specialist at CHNM from 2002. Your

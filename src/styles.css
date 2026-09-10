@@ -873,3 +873,5 @@ section.slide.wide-figure-slide .wide-figure-heading { padding-bottom: clamp(8px
 }
 
 body.overview section.slide .content .lens-list { display: none !important; }
+/* Rows without a gloss should not leave a hole where the third column was. */
+.lens-list li:not(:has(span)) { grid-template-columns: 2.1em minmax(0, 1fr); }
