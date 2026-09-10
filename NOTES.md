@@ -93,11 +93,27 @@ makes the discoverability work fundable. Same labor, two arguments.
 ## Slides 5–7 — What we pulled / what read it / what came back
 
 Keep this fast. It is evidence that the pipeline is real, not the point of the
-talk. Slide 6 carries the local-processing argument: open-weights models on New
-Media Lab hardware — the point isn't thrift, it's that an archive full of names,
-addresses and phone numbers never went to a vendor, and that the same models at
-the same versions can be re-run in five years, which an API endpoint cannot
-promise.
+talk.
+
+**Slide 6 carries the local-processing argument.** Three words are on the
+slide; here is what each one means.
+
+**Privacy.** The Archive is full of people's names, home addresses, phone
+numbers and voices. Because the models run on our own hardware, none of that
+was uploaded to an outside company. Using a commercial API would have meant
+sending 150 gigabytes of other people's personal material to a vendor.
+
+**Reproducibility.** Open-weights models can be kept and run again. If someone
+asks in five years how a particular transcript was produced, we can re-run the
+same model at the same version and show them. A commercial service can change
+its model underneath you, or shut down.
+
+**Cost.** Machine reading used to be the expensive part of a project this size.
+It isn't any more. The cost has moved to human review — checking the output,
+handling personal information, and improving the metadata. That is what the
+four tiers later in the deck are asking for.
+
+The PDF accessibility tool is the CUNY AI Lab's — say so.
 
 **Where this goes next — say it as a method, not a one-off.** The September 11
 Digital Archive is the case study, but the pipeline isn't specific to it. One of
