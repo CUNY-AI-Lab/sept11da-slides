@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#ffffff" />
+  <title>The Afterlives of the September 11 Digital Archive</title>
+  <link rel="icon" type="image/png" href="images/ashp-logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
+  <link rel="stylesheet" href="src/styles.css?v=20260910d" />
+</head>
+<body>
+<div id="image-lightbox" class="lightbox" aria-hidden="true">
+  <button id="lightbox-close" class="lightbox-close" aria-label="Close zoomed image">×</button>
+  <figure class="lightbox-figure">
+    <img id="lightbox-image" src="" alt="">
+    <figcaption id="lightbox-caption" class="lightbox-caption"></figcaption>
+  </figure>
+</div>
+<a href="#slide-content" class="skip-link">Skip to slide content</a>
+<div id="slide-announcer" class="sr-only" aria-live="polite" aria-atomic="true"></div>
+
+<header role="banner">
+  <a href="https://ashp.cuny.edu" target="_blank" rel="noopener" class="header-logo-link" aria-label="American Social History Project / Center for Media and Learning">
+    <img src="images/ashp-logo.png" alt="" aria-hidden="true" class="header-logo">
+    <span class="header-wordmark">ASHP&#8202;/&#8202;CML</span>
+  </a>
+  <a href="https://911digitalarchive.org" target="_blank" rel="noopener" class="header-deck-link" id="deckLink">911digitalarchive.org</a>
+  <div class="header-context-links" role="group" aria-label="Related slide links">
+    <a target="_blank" rel="noopener" class="header-secondary-link" id="deckSecondaryLink" hidden></a>
+    <a target="_blank" rel="noopener" class="header-tertiary-link" id="deckTertiaryLink" hidden></a>
+  </div>
+</header>
+
+<main id="slide-content" role="main" aria-label="Presentation slides">
+
+  <!-- ============================ 1. TITLE ============================ -->
+  <section class="slide slide-title" data-slide="title" aria-label="Title slide: The Afterlives of the September 11 Digital Archive, CUNY Graduate Center, September 10, 2026">
+    <figure class="title-art-wrap stage">
+      <div class="stage-fill" aria-hidden="true">
+        <canvas id="title-index" class="title-slip"></canvas>
+      </div>
+      <div class="title-overlay">
+        <div class="title-card">
+          <div class="title-logo-row">
+            <img src="images/ashp-logo.png" alt="American Social History Project / Center for Media and Learning">
+            <img src="images/rrchnm-logo.png" alt="Roy Rosenzweig Center for History and New Media">
+          </div>
+          <div class="eyebrow">Panel Discussion · Elebash Recital Hall · September 10, 2026</div>
+          <h1><span class="title-line">The Afterlives of the</span><span class="title-line">September 11 Digital Archive</span></h1>
+          <p class="panelists"><strong>Stefano Morello</strong> — Director for Digital Projects, ASHP&#8202;/&#8202;CML</p>
+          <p class="institution">The Graduate Center, City University of New York</p>
+          <a class="title-link" href="https://911digitalarchive.org" target="_blank" rel="noopener">911digitalarchive.org</a>
+        </div>
+      </div>
+    </figure>
+  </section>
+
+  <!-- ======================= 2. CREDITS / ROSTER ======================= -->
+  <section class="slide placeholder-slide crowded" data-slide="roster" aria-label="Who kept the archive alive, 2002 to tonight">
+    <div class="content">
+      <div class="label">Credits</div>
+      <h1>Who kept it alive</h1>
+      <ul class="roster">
+        <li><span class="era">2002–2005</span><span class="who"><em>CHNM —</em> <strong>Roy Rosenzweig</strong>, <strong>Daniel Cohen</strong>, <strong>T. Mills Kelly</strong>, <strong>Joan Fragaszy</strong> (program manager), <strong>Marty Andolino</strong>, <strong>Rikk Mulligan</strong>, <strong>Jim Safley</strong></span></li>
+        <li><span class="era">2002–2005</span><span class="who"><em>ASHP —</em> <strong>Joshua Brown</strong> (co-PI), <strong>Pennee Bender</strong>, <strong>Ellen Noonan</strong>, <strong>Andrea Ades Vasquez</strong>, <strong>Stephen Brier</strong></span></li>
+        <li class="now"><span class="era">2005–present</span><span class="who"><strong>Jim Safley</strong> <em>— lead developer and digital archivist. Twenty-one years on this project.</em></span></li>
+        <li><span class="era">2006–2014</span><span class="who"><strong>Ammon Shepherd</strong> <em>— system administrator</em></span></li>
+        <li><span class="era">2006–2019</span><span class="who"><strong>Ken Albers</strong>, <strong>Alyssa Fahringer</strong>, <strong>Ben Schneider</strong>, <strong>Jeri Wieringa</strong> <em>— project associates and graduate research assistants</em></span></li>
+        <li><span class="era">2008–2018</span><span class="who"><strong>Sheila Brennan</strong> <em>— co-director and administrator, RRCHNM</em></span></li>
+        <li><span class="era">2011–2017</span><span class="who"><strong>Sharon Leon</strong> <em>— co-director, Public Projects, RRCHNM</em></span></li>
+        <li><span class="era">2020–2022</span><span class="who"><strong>Megan Brett</strong> <em>— project manager, RRCHNM</em></span></li>
+        <li class="now"><span class="era">2022–present</span><span class="who"><strong>Jessica Otis</strong> <em>— project administrator, RRCHNM</em></span></li>
+        <li class="now"><span class="era">present</span><span class="who"><strong>Tony Trinh</strong>, <strong>Jason Heppler</strong>, <strong>Savannah Scott</strong> (summers) <em>— RRCHNM</em></span></li>
+      </ul>
+      <p class="roster-note">The people who kept this archive running for twenty-five years are not on this stage. RRCHNM has carried the maintenance burden — and the fundraising for it — for the past decade.</p>
+    </div>
+    <figure class="stage blank-stage" aria-hidden="true"></figure>
+  </section>
+
+  <!-- =================== 3. STEWARDSHIP / THE QUESTION =================== -->
+  <section class="slide placeholder-slide statement" data-slide="stewardship" aria-label="Who is ultimately responsible over this timescale?">
+    <div class="content">
+      <div class="label">Stewardship</div>
+      <h1>Who is ultimately responsible over this timescale?</h1>
+      <p>Honestly? For most of the last twenty years the answer is: <strong>whoever happened to still be there.</strong> That worked. It is not a plan.</p>
+    </div>
+    <figure class="stage bignum-stage" aria-label="Twenty-one years: the length of Jim Safley's tenure on the project">
+      <div class="bignum">21</div>
+      <p class="bignum-cap">years one developer has stayed with this project. That is the institutional stewardship model.</p>
+    </figure>
+  </section>
+
+  <section class="slide placeholder-slide statement crowded" data-slide="provenance" aria-label="The archive could not tell me who had maintained it">
+    <div class="content">
+      <div class="label">Stewardship</div>
+      <blockquote>
+        <p>When I went to find out who had maintained this archive,</p>
+        <p>the archive couldn't tell me. I had to email someone.</p>
+      </blockquote>
+      <cite>Provenance is measurable — and it is missing</cite>
+    </div>
+    <figure class="stage blank-stage" aria-hidden="true"></figure>
+  </section>
+
+  <!-- ===================== 4. THE 2011 PLAN, SCORED ===================== -->
+  <section class="slide placeholder-slide crowded" data-slide="plan-2011" aria-label="The four tasks set out in 2011, scored today">
+    <div class="content">
+      <div class="label">The record</div>
+      <h1>The 2011 plan, scored today</h1>
+      <ul class="status-list">
+        <li class="done"><span class="tag">Done</span><span class="body"><strong>Migration to open-source infrastructure</strong>Save America's Treasures (National Park Service) and NEH funded the move to Omeka and the relaunch. The site you can visit tonight exists because of Sharon Leon, Sheila Brennan and Jim Safley. This is what people mean when they say the archive <em>survived</em>.</span></li>
+        <li class="done"><span class="tag">Done</span><span class="body"><strong>Long-term preservation of the files</strong>And I can prove it — every byte verified against its checksum.</span></li>
+        <li class="undone"><span class="tag">Not done</span><span class="body"><strong>Metadata enhancement</strong>Zero tags. Twenty-four dates. Eighteen fields. This is the one that never got funded, and it is the one that decides whether anyone can find anything.</span></li>
+        <li class="partial"><span class="tag">Partly</span><span class="body"><strong>Redesign of the public interface</strong>Yes — in 2011. It is a 2011 interface.</span></li>
+      </ul>
+    </div>
+    <figure class="stage blank-stage" aria-hidden="true"></figure>
+  </section>
+
+  <section class="slide slide-break" data-slide="break-anticipated" aria-label="Section break: the thing nobody could have anticipated">
+    <div class="content">
+      <div class="label">And one nobody planned for</div>
+      <h1>It became possible for a machine to read the archive.</h1>
+      <h2>The handwriting. The voicemails. The photographs. That changes which of the remaining tasks are hard.</h2>
+    </div>
+  </section>
+
+  <!-- ========================= 5. WHAT WE PULLED ========================= -->
+  <section class="slide placeholder-slide crowded" data-slide="pulled" data-link="https://911digitalarchive.org" aria-label="What we pulled from the archive">
+    <div class="content">
+      <div class="label">Method</div>
+      <h1>What we pulled</h1>
+      <ul class="ledger">
+        <li><span class="k">Items returned by the API</span><span class="v">70,359</span></li>
+        <li><span class="k">Items flagged public in Omeka<em>The two numbers agree — nothing is being withheld by the platform</em></span><span class="v">70,359</span></li>
+        <li><span class="k">Files<em>Every one verified against its checksum</em></span><span class="v">67,609<small>150.7 GB</small></span></li>
+        <li class="flag"><span class="k">Distinct file content by SHA-256<em>779 files are duplicates of something already in the set</em></span><span class="v">66,830</span></li>
+      </ul>
+    </div>
+    <figure class="stage blank-stage" aria-hidden="true"></figure>
+  </section>
+
+  <!-- =========================== 6. PIPELINE =========================== -->
+  <section class="slide placeholder-slide figure-side" data-slide="pipeline" data-link="https://ailab.gc.cuny.edu/models/" data-link-label="ailab.gc.cuny.edu/models" aria-label="The reading pipeline: which model read what">
+    <div class="content">
+      <div class="label">Method</div>
+      <h1>What read it</h1>
+      <ul class="pipeline">
+        <li><span class="tool">GLM-OCR<span class="where">run locally</span></span><span class="what">Handwriting, image transcription, and alt text</span></li>
+        <li><span class="tool">Whisper<span class="where">run locally</span></span><span class="what">Voicemails, interviews, recordings</span></li>
+        <li><span class="tool">PDF remediation<span class="where">CUNY AI Lab</span></span><span class="what">Scanned documents made accessible and searchable</span></li>
+      </ul>
+      <div class="qr-row tight">
+        <img src="images/cail-models-qr.png" alt="QR code linking to the CUNY AI Lab model registry at ailab.gc.cuny.edu/models">
+        <p><strong>Every model is on the record.</strong>The CUNY AI Lab publishes which model produced which output, at which version — <a href="https://ailab.gc.cuny.edu/models/" target="_blank" rel="noopener">ailab.gc.cuny.edu/models</a></p>
+      </div>
+    </div>
+    <figure class="stage closing-stage" aria-label="CUNY AI Lab and its PDF accessibility tool">
+      <img src="images/cail-logo.png" alt="CUNY AI Lab">
+      <figcaption class="stage-note">
+        <img src="images/pdf-tool-qr.png" alt="QR code linking to the CUNY AI Lab PDF accessibility tool">
+        <span><strong>PDF accessibility tool</strong><a href="https://tools.ailab.gc.cuny.edu/pdf-accessibility/" target="_blank" rel="noopener">tools.ailab.gc.cuny.edu/pdf-accessibility</a>Built at the Lab, open to anyone at CUNY.</span>
+      </figcaption>
+    </figure>
+  </section>
+
+  <!-- ========================= 7. WHAT CAME BACK ========================= -->
+  <section class="slide placeholder-slide crowded" data-slide="returned" aria-label="What the pipeline returned">
+    <div class="content">
+      <div class="label">Result</div>
+      <h1>What came back</h1>
+      <ul class="figures">
+        <li><span class="k">Handwritten card pages transcribed<em>&ldquo;How did you witness history on September 11, 2001?&rdquo;</em></span><span class="n">41,225</span></li>
+        <li><span class="k">Hours of audio transcribed locally<em>Voicemails, interviews, recordings — 152,000 timed segments</em></span><span class="n">199</span></li>
+        <li><span class="k">Photographs, flyers, drawings and screenshots described<em>83 GB of imagery, now searchable</em></span><span class="n">31,600</span></li>
+        <li><span class="k">Characters read out of the FDNY Incident Action Plans</span><span class="n">17<small>million</small></span></li>
+        <li><span class="k">Flash pieces recovered<em>197 minutes of speech inside formats the browser stopped playing</em></span><span class="n">123</span></li>
+      </ul>
+    </div>
+    <figure class="stage blank-stage" aria-hidden="true"></figure>
+  </section>
+
+  <!-- ====================== 8. THREE ARTIFACTS ====================== -->
+  <section class="slide placeholder-slide figure-side" data-slide="artifact-card" aria-label="A handwritten card and its transcript">
+    <div class="content">
+      <div class="label">One card</div>
+      <h1>41,225 of these</h1>
+      <p>A card filled out at a &ldquo;Bearing Witness to History&rdquo; kiosk. Until this year the text on it was not searchable, not readable by a screen reader, and not countable.</p>
+      <p>The scan stays. The transcript sits beside it, and so does the name the model flagged for a human to look at.</p>
+    </div>
+    <figure class="stage figure-stage ui-stage" aria-label="Review interface: a handwritten card beside its machine transcription">
+      <img src="images/qc-htr.png" alt="A handwritten card from a Bearing Witness to History kiosk beside its machine transcription, with confidence 0.85 and a detected name flagged for review">
+    </figure>
+  </section>
+
+  <section class="slide placeholder-slide figure-side" data-slide="artifact-audio" aria-label="A voicemail and its transcript">
+    <div class="content">
+      <div class="label">One recording</div>
+      <h1>199 hours of these</h1>
+      <p>A seventeen-year-old in Cleveland describing her school day. One of 152,000 timed segments — which means you can now search into the middle of a recording, not just its title.</p>
+    </div>
+    <figure class="stage figure-stage ui-stage" aria-label="Review interface: an audio player beside the machine transcript of a recording">
+      <img src="images/qc-asr.png" alt="The review interface showing an audio player beside a machine transcript of a young woman describing September 11 at her school in Cleveland, Ohio">
+    </figure>
+  </section>
+
+  <section class="slide placeholder-slide figure-side" data-slide="artifact-photo" aria-label="A photograph and its description">
+    <div class="content">
+      <div class="label">One photograph</div>
+      <h1>31,600 of these</h1>
+      <p>An aerial view of the site, described in enough detail to be found by someone who cannot see it — and by someone searching for &ldquo;construction equipment&rdquo; or &ldquo;Hudson River.&rdquo;</p>
+      <p>The model also records what it is unsure of, whether anyone is identifiable, and whether the image is distressing. Those flags are what make a review queue possible at all.</p>
+    </div>
+    <figure class="stage figure-stage ui-stage" aria-label="Review interface: a photograph beside its machine-generated description">
+      <img src="images/qc-vision.png" alt="The review interface showing an aerial photograph of the World Trade Center site beside a machine-generated description recording category, people, distressing flag and confidence">
+    </figure>
+  </section>
+
+  <section class="slide placeholder-slide figure-side" data-slide="local" data-link="https://cuny.is/nml" data-link-label="cuny.is/nml" aria-label="Everything ran locally in the New Media Lab">
+    <div class="content">
+      <div class="label">Where it ran</div>
+      <h1>All of it, on our own machines</h1>
+      <p>Every model in this pipeline is open-weights and ran locally, on hardware in the <strong>New Media Lab</strong> at the Graduate Center. No commercial API. No per-item metering. Nothing sent to a vendor.</p>
+      <ul class="pipeline">
+        <li><span class="tool">Nothing left the building</span><span class="what">Handwriting, voicemails, and photographs from an archive full of names, addresses and phone numbers were never transmitted to a third party</span></li>
+        <li><span class="tool">Nothing depends on a vendor</span><span class="what">The same models, at the same versions, can be re-run in five years — an API endpoint cannot promise that</span></li>
+        <li><span class="tool">Nothing is unaffordable</span><span class="what">Reading is no longer the expensive part. Human judgement is</span></li>
+      </ul>
+    </div>
+    <figure class="stage figure-stage logo-photo-stage" aria-label="The New Media Lab at the CUNY Graduate Center">
+      <img class="brand-mark" src="images/nml-logo.png" alt="New Media Lab, CUNY Graduate Center">
+      <img class="brand-photo" src="images/nml-lab.jpg" alt="Students and faculty at workstations in the New Media Lab at the Graduate Center">
+    </figure>
+  </section>
+
+  <!-- ======================= 9. THE REVIEW TIERS ======================= -->
+  <section class="slide slide-break" data-slide="break-review" aria-label="Section break: none of this is publishable yet">
+    <div class="content">
+      <div class="label">What comes next</div>
+      <h1>None of this is publishable yet.</h1>
+      <h2>A machine read the archive. Four tiers of human review stand between that and anything a visitor should see. This is what we are seeking funding for.</h2>
+    </div>
+  </section>
+
+  <section class="slide placeholder-slide figure-side" data-slide="tier-0" aria-label="Tier zero: file recovery">
+    <div class="content">
+      <div class="tier-badge">Tier 0</div>
+      <h1>File recovery</h1>
+      <p>Flash pieces, dead formats, files no current browser will open. 123 Flash objects are already back — 197 minutes of speech that had effectively left the archive while still sitting on the disk.</p>
+      <ul class="tier-rail">
+        <li class="on"><span class="t">0</span><span>File recovery</span></li>
+        <li><span class="t">1</span><span>Personally identifiable information</span></li>
+        <li><span class="t">2</span><span>Transcription and description quality</span></li>
+        <li><span class="t">3</span><span>Metadata</span></li>
+        <li><span class="t">4</span><span>New pathways of interpretation</span></li>
+      </ul>
+    </div>
+    <figure class="stage blank-stage" aria-hidden="true"></figure>
+  </section>
+
+  <section class="slide placeholder-slide figure-side" data-slide="tier-1" aria-label="Tier one: personally identifiable information review">
+    <div class="content">
+      <div class="tier-badge">Tier 1</div>
+      <h1>Personally identifiable information</h1>
+      <p>Machine reading makes an archive searchable. It also makes it searchable for things a depositor in 2002 never imagined being findable.</p>
+      <ul class="figures">
+        <li><span class="k">Consent refused — the depositor ticked <em>No</em></span><span class="n">157</span></li>
+        <li><span class="k">A minor, and directly reachable</span><span class="n">168</span></li>
+        <li><span class="k">Recordings where an address or phone number is spoken aloud</span><span class="n">117</span></li>
+      </ul>
+    </div>
+    <figure class="stage stack-stage ui-stage" aria-label="The triage interface for personally identifiable information">
+      <img src="images/pii-cards.png" alt="Three review cards: 157 items where consent was refused, 168 where a minor is directly reachable, and 117 recordings in which an address or phone number is spoken aloud">
+      <img src="images/pii-queue.png" alt="The rest of the review queue by priority: 157 block, 3,941 urgent, 1,934 high, 10,346 medium, 3,258 low">
+    </figure>
+  </section>
+
+  <section class="slide placeholder-slide wide-figure-slide" data-slide="tier-2" aria-label="Tier two: transcription and description quality">
+    <div class="content wide-figure-heading">
+      <div class="tier-badge">Tier 2</div>
+      <h1>Is the machine right?</h1>
+      <p>An accuracy figure means nothing until enough has been checked. A hundred and fifty of a source is a defensible slice; ten is an anecdote. The model's original output is never overwritten — a corrected transcript is stored <em>beside</em> it, with who corrected it and when.</p>
+    </div>
+    <figure class="stage figure-stage ui-stage" aria-label="Quality dashboard: records checked per source">
+      <img src="images/qc-dashboard.png" alt="Quality dashboard by source: vision 15,199 records, zip-image 16,433, pdf 332, htr 41,225, asr 5,519 — almost none yet checked">
+    </figure>
+  </section>
+
+  <section class="slide placeholder-slide statement" data-slide="tier-3" aria-label="Tier three: metadata">
+    <div class="content">
+      <div class="tier-badge">Tier 3</div>
+      <h1>Metadata — the task that never got funded</h1>
+      <p>Seventy thousand items. Eighteen fields. Twenty-four usable dates. Zero tags.</p>
+      <p>Everything above this line was engineering. This one is scholarship, and it is the one that decides what the archive can be asked.</p>
+    </div>
+    <figure class="stage bignum-stage" aria-label="Zero tags across the whole archive">
+      <div class="bignum">0</div>
+      <p class="bignum-cap">tags across 70,359 items</p>
+    </figure>
+  </section>
+
+  <section class="slide placeholder-slide statement crowded" data-slide="plurality" aria-label="Multiplicity you cannot search is functionally a singular">
+    <div class="content">
+      <div class="label">Why it matters</div>
+      <blockquote>
+        <p>Multiplicity you can't search is functionally a singular.</p>
+        <p>The institutional narrative didn't defeat the plural archive. It just had better retrieval.</p>
+      </blockquote>
+      <cite>Search is where an archive keeps its promise of plurality — or quietly stops keeping it</cite>
+    </div>
+    <figure class="stage blank-stage" aria-hidden="true"></figure>
+  </section>
+
+  <!-- ==================== 10. TIER 4 — INTERPRETATION ==================== -->
+  <section class="slide slide-break" data-slide="break-tier4" aria-label="Section break: Tier four, new pathways of interpretation">
+    <div class="content">
+      <div class="tier-badge">Tier 4</div>
+      <h1>What becomes askable once it is indexed.</h1>
+      <h2>What happens to plurality when the event acquires an established narrative? These are the questions an index makes answerable — and none of them were answerable last year.</h2>
+    </div>
+  </section>
+
+  <section class="slide placeholder-slide crowded" data-slide="lens-naming" aria-label="Naming the event over time">
+    <div class="content">
+      <div class="tier-badge">Tier 4 · Lens 01</div>
+      <h1>Naming the event over time</h1>
+      <p class="lens-q">&ldquo;September 11&rdquo; · &ldquo;9/11&rdquo; · &ldquo;the attacks&rdquo; · &ldquo;the towers&rdquo; · &ldquo;Ground Zero&rdquo; — when does the shorthand consolidate?</p>
+      <p class="lens-note">Diachronic naming is the standard move in memory studies. What is unusual is the corpus: this is one of very few bodies of <strong>dated, ordinary, non-journalistic</strong> language about the event, written by people who were not being edited.</p>
+    </div>
+    <figure class="stage blank-stage" aria-hidden="true"></figure>
+  </section>
+
+  <section class="slide placeholder-slide crowded" data-slide="lens-distance" aria-label="Distance from Lower Manhattan">
+    <div class="content">
+      <div class="tier-badge">Tier 4 · Lens 02</div>
+      <h1>Distance</h1>
+      <p class="lens-q">Does what people write vary by how far they travelled to write it?</p>
+      <p class="lens-note">Map the hometowns, ring them by distance from Lower Manhattan, and ask the real question. A visitor from Nebraska and one from Jersey City are doing different things by standing in that room.</p>
+      <div class="lens-figs">
+        <div><span class="n">~20,000</span><span class="k">hometowns given by depositors</span></div>
+      </div>
+    </div>
+    <figure class="stage blank-stage" aria-hidden="true"></figure>
+  </section>
+
+  <section class="slide placeholder-slide crowded" data-slide="lens-absence" aria-label="Absence, measured rather than asserted">
+    <div class="content">
+      <div class="tier-badge">Tier 4 · Lens 03</div>
+      <h1>Absence, measured rather than asserted</h1>
+      <p class="lens-q">Until now nobody could responsibly say the archive under-represents anything — because nobody could count.</p>
+      <p class="lens-note">With an index you can finally count what <em>isn't</em> here: the backlash. Sikh and Arab American experience. The murder of Balbir Singh Sodhi. Dissent. Conspiracy. The wars that followed.</p>
+      <p class="lens-note">A claim about silence in an archive should be a measurement, not a hunch.</p>
+    </div>
+    <figure class="stage blank-stage" aria-hidden="true"></figure>
+  </section>
+
+  <section class="slide placeholder-slide crowded" data-slide="lens-languages" aria-label="Languages across the corpus">
+    <div class="content">
+      <div class="tier-badge">Tier 4 · Lens 04</div>
+      <h1>Languages</h1>
+      <p class="lens-q">An English-only reading hides whoever else is in there.</p>
+      <p class="lens-note">There is a Chinatown oral history collection in this archive. There is an Italian-language Flash newscast. Language detection across the full corpus is a single pass — and it is the difference between an archive of New York and an archive of English-speaking New York.</p>
+      <div class="lens-figs">
+        <div><span class="n">51M</span><span class="k">characters now available to detect against</span></div>
+      </div>
+    </div>
+    <figure class="stage blank-stage" aria-hidden="true"></figure>
+  </section>
+
+  <section class="slide placeholder-slide crowded" data-slide="lens-drawings" aria-label="Children's drawings">
+    <div class="content">
+      <div class="tier-badge">Tier 4 · Lens 05</div>
+      <h1>Children's drawings</h1>
+      <p class="lens-q">Towers, planes, flags, hearts — how did children draw something most of them only saw on television?</p>
+      <p class="lens-note">A sketch flag is recorded per page, and the pilot rate implies several thousand of them. Iconography over time, in a visual record nobody has been able to assemble because nobody could find the pages.</p>
+    </div>
+    <figure class="stage blank-stage" aria-hidden="true"></figure>
+  </section>
+
+  <section class="slide placeholder-slide crowded" data-slide="lens-web" aria-label="The archived web as a link graph">
+    <div class="content">
+      <div class="tier-badge">Tier 4 · Lens 06</div>
+      <h1>The archived web as a link graph</h1>
+      <p class="lens-q">What did the post-9/11 web actually point at?</p>
+      <p class="lens-note">Extract the hyperlinks out of the site captures and the shape of an early-2000s web neighbourhood comes back — who linked to whom, and what has since disappeared from the other end of those links.</p>
+      <div class="lens-figs">
+        <div><span class="n">3,369</span><span class="k">site captures</span></div>
+        <div><span class="n">55,825</span><span class="k">members</span></div>
+      </div>
+    </div>
+    <figure class="stage blank-stage" aria-hidden="true"></figure>
+  </section>
+
+  <section class="slide placeholder-slide crowded" data-slide="lens-more" aria-label="Further lenses to be added">
+    <div class="content">
+      <div class="tier-badge">Tier 4 · Lens 07</div>
+      <h1>Iraq and the FDNY</h1>
+      <p class="lens-q">[ To be added before the talk — Stefano ]</p>
+      <p class="lens-note">Placeholder slide. Paste the Iraq / FDNY material here; the layout matches the other Tier 4 lenses, and you can add a <code>.lens-figs</code> block for any counts.</p>
+    </div>
+    <figure class="stage blank-stage" aria-hidden="true"></figure>
+  </section>
+
+  <!-- ===================== 11. THE BINDING PRINCIPLE ===================== -->
+  <section class="slide placeholder-slide crowded" data-slide="principle" aria-label="Every visual must walk back to the artifact">
+    <div class="content">
+      <div class="label">The rule</div>
+      <h1>Every visual walks back to the artifact</h1>
+      <p class="principle-line">If a chart says 6,761 cards in April 2003, clicking it gets you those cards.</p>
+      <ul class="principle-chain">
+        <li><span class="step">Chart</span><span>A count you can see — 6,761 cards, April 2003</span></li>
+        <li><span class="step">Click</span><span>The 6,761 cards themselves, not a summary of them</span></li>
+        <li><span class="step">Click</span><span>One card: the scan, beside its transcript, beside who corrected it</span></li>
+      </ul>
+      <p class="roster-note">A visualization that cannot be walked back to the object is an assertion. The whole point of indexing a plural archive is that its claims stay auditable by the person reading them.</p>
+    </div>
+    <figure class="stage blank-stage" aria-hidden="true"></figure>
+  </section>
+
+  <!-- ========================= 12. THE OFFER ========================= -->
+  <section class="slide placeholder-slide crowded" data-slide="offer" data-link="https://rrchnm.org" data-link-label="rrchnm.org" aria-label="Offered to RRCHNM's plan, not instead of it">
+    <div class="content">
+      <div class="label">How this is offered</div>
+      <h1>To their plan, not instead of it</h1>
+      <p class="principle-line">RRCHNM has an active plan for this archive. Ours is offered to it.</p>
+      <ul class="principle-chain">
+        <li><span class="step">Theirs</span><span>Title II accessibility compliance, and &ldquo;flattening the site&rdquo; for long-term sustainability</span></li>
+        <li><span class="step">Ours</span><span>An index: transcripts, descriptions, and the review apparatus to make them trustworthy</span></li>
+        <li><span class="step">Both</span><span>Accessibility and discoverability are the same work done twice if they are done separately</span></li>
+      </ul>
+      <div class="credit-units">
+        <div class="unit-chip"><img src="images/rrchnm-logo.png" alt="Roy Rosenzweig Center for History and New Media"></div>
+        <div class="unit-chip"><img src="images/ashp-logo.png" alt="American Social History Project / Center for Media and Learning"></div>
+        <div class="unit-chip"><img src="images/cail-logo.png" alt="CUNY AI Lab"></div>
+      </div>
+    </div>
+    <figure class="stage blank-stage" aria-hidden="true"></figure>
+  </section>
+
+  <!-- =========================== 13. CLOSING =========================== -->
+  <section class="slide placeholder-slide figure-side" data-slide="closing" data-link="https://911digitalarchive.org" data-secondary-link="https://ailab.gc.cuny.edu/models/" data-secondary-link-label="ailab.gc.cuny.edu/models" aria-label="Closing: thank you and links">
+    <div class="content">
+      <div class="label">Thank you</div>
+      <h1>Stefano Morello</h1>
+      <p>Director for Digital Projects<br>American Social History Project&#8202;/&#8202;Center for Media and Learning<br>The Graduate Center, CUNY</p>
+      <div class="qr-row tight">
+        <img src="images/archive-qr.png" alt="QR code linking to 911digitalarchive.org">
+        <p><strong>The September 11 Digital Archive</strong><a href="https://911digitalarchive.org" target="_blank" rel="noopener">911digitalarchive.org</a></p>
+      </div>
+      <div class="qr-row tight">
+        <img src="images/cail-models-qr.png" alt="QR code linking to the CUNY AI Lab model registry">
+        <p><strong>CUNY AI Lab model registry</strong><a href="https://ailab.gc.cuny.edu/models/" target="_blank" rel="noopener">ailab.gc.cuny.edu/models</a></p>
+      </div>
+    </div>
+    <figure class="stage closing-stage" aria-label="Partner logos: ASHP/CML, RRCHNM, and the CUNY AI Lab">
+      <img src="images/ashp-logo.png" alt="American Social History Project / Center for Media and Learning">
+      <img src="images/rrchnm-logo.png" alt="Roy Rosenzweig Center for History and New Media">
+      <img src="images/cail-logo.png" alt="CUNY AI Lab">
+    </figure>
+  </section>
+
+</main>
+
+<footer class="sticky-footer">
+  <div class="footer-slider">
+    <button class="footer-arrow" id="btn-prev" aria-label="Previous slide">&#8592;</button>
+    <div class="slider-track">
+      <input type="range" id="slide-scrubber" min="1" max="30" value="1" aria-label="Navigate to slide">
+      <div class="slider-progress"></div>
+      <div class="slider-thumb"></div>
+    </div>
+    <button class="footer-arrow" id="btn-next" aria-label="Next slide">&#8594;</button>
+    <button class="footer-arrow" id="btn-fullscreen" aria-label="Toggle fullscreen" title="Toggle fullscreen (F)">&#9974;</button>
+    <div class="footer-meta">
+      <span id="slider-counter">1 / 30</span>
+      <span class="kbd">Space</span>
+    </div>
+  </div>
+</footer>
+
+<script src="src/slides.js?v=20260910d"></script>
+<script>
+/* Title background — "Index Sweep".
+   A field of marks, one per sampled item in the archive. Most sit dark: held,
+   preserved, unreadable. A band of light passes across the field and the marks
+   it touches resolve into legible glyphs, then fade back. That is the whole
+   argument of the talk in one image — the difference between keeping something
+   and being able to read it. Move the pointer to drag the sweep. */
+(function () {
+  function initIndexSweep(canvas) {
+    if (!canvas) return;
+    var ctx = canvas.getContext('2d', { alpha: false });
+    if (!ctx) return;
+
+    var reduceMotion = window.matchMedia &&
+      window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    var dpr = 1, W = 0, H = 0;
+    var cols = 0, rows = 0, cell = 0, ox = 0, oy = 0;
+    var marks = [];
+    var sweep = 0, target = null, running = false, onScreen = true;
+
+    function build() {
+      cell = Math.max(12, Math.min(22, Math.round(Math.min(W, H) / 46)));
+      cols = Math.ceil(W / cell) + 2;
+      rows = Math.ceil(H / cell) + 2;
+      ox = (W - cols * cell) / 2;
+      oy = (H - rows * cell) / 2;
+      marks = new Array(cols * rows);
+      for (var i = 0; i < marks.length; i++) {
+        // Each mark carries a stable random character: length of the glyph run,
+        // and a jitter so the field never looks like a spreadsheet.
+        marks[i] = {
+          w: 0.28 + Math.random() * 0.52,   // glyph width as a fraction of cell
+          jx: (Math.random() - 0.5) * cell * 0.22,
+          jy: (Math.random() - 0.5) * cell * 0.22,
+          // A small share of marks are already legible: the 2011 migration
+          // preserved everything, and a handful of records always had a date.
+          seeded: Math.random() < 0.035,
+          phase: Math.random() * 6.283
+        };
+      }
+    }
+
+    function resize() {
+      var r = canvas.getBoundingClientRect();
+      dpr = Math.min(window.devicePixelRatio || 1, 2);
+      W = Math.max(1, Math.round(r.width));
+      H = Math.max(1, Math.round(r.height));
+      canvas.width = Math.round(W * dpr);
+      canvas.height = Math.round(H * dpr);
+      ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+      build();
+      render();
+    }
+
+    function step() {
+      // The sweep travels left to right and wraps; the pointer pulls it.
+      if (target !== null) {
+        sweep += (target - sweep) * 0.075;
+      } else {
+        sweep += W * 0.0016;
+        if (sweep > W * 1.25) sweep = -W * 0.25;
+      }
+    }
+
+    function render() {
+      ctx.fillStyle = '#0b1014';
+      ctx.fillRect(0, 0, W, H);
+
+      var band = Math.max(W * 0.16, 190);
+      var t = performance.now() / 1000;
+
+      for (var gy = 0; gy < rows; gy++) {
+        for (var gx = 0; gx < cols; gx++) {
+          var m = marks[gy * cols + gx];
+          if (!m) continue;
+          var px = ox + gx * cell + cell / 2 + m.jx;
+          var py = oy + gy * cell + cell / 2 + m.jy;
+
+          // Distance from the sweep centre, 0 at the centre, 1 at the edge.
+          var d = Math.abs(px - sweep) / band;
+          var lit = d < 1 ? (1 - d) * (1 - d) : 0;
+          if (m.seeded) lit = Math.max(lit, 0.22);
+          // A slow breath so the dark field is never entirely inert.
+          var idle = 0.185 + 0.05 * Math.sin(t * 0.5 + m.phase);
+
+          var half = (cell * m.w) / 2;
+          var alpha = Math.min(1, idle + lit * 0.82);
+
+          // Unlit: a flat dash — an object held but not read.
+          // Lit: it warms toward the archival blue and gains a second stroke,
+          // the way a transcript sits under a scan.
+          var r = Math.round(128 + lit * 88);
+          var g = Math.round(156 + lit * 84);
+          var b = Math.round(176 + lit * 64);
+          ctx.strokeStyle = 'rgba(' + r + ',' + g + ',' + b + ',' + alpha.toFixed(3) + ')';
+          ctx.lineWidth = 1 + lit * 0.7;
+          ctx.beginPath();
+          ctx.moveTo(px - half, py);
+          ctx.lineTo(px + half, py);
+          ctx.stroke();
+
+          if (lit > 0.5) {
+            ctx.strokeStyle = 'rgba(196,224,240,' + ((lit - 0.5) * 0.7).toFixed(3) + ')';
+            ctx.lineWidth = 1;
+            ctx.beginPath();
+            ctx.moveTo(px - half * 0.62, py + cell * 0.22);
+            ctx.lineTo(px + half * 0.62, py + cell * 0.22);
+            ctx.stroke();
+          }
+        }
+      }
+
+      // The reading head itself: a soft vertical wash, no hard edge.
+      var grad = ctx.createLinearGradient(sweep - band, 0, sweep + band, 0);
+      grad.addColorStop(0, 'rgba(44,84,112,0)');
+      grad.addColorStop(0.5, 'rgba(90,150,190,0.14)');
+      grad.addColorStop(1, 'rgba(44,84,112,0)');
+      ctx.fillStyle = grad;
+      ctx.fillRect(0, 0, W, H);
+
+      // Vignette so the title card always has a ground to sit on.
+      var vg = ctx.createRadialGradient(W / 2, H / 2, Math.min(W, H) * 0.18, W / 2, H / 2, Math.max(W, H) * 0.72);
+      vg.addColorStop(0, 'rgba(11,16,20,0)');
+      vg.addColorStop(1, 'rgba(6,9,11,0.68)');
+      ctx.fillStyle = vg;
+      ctx.fillRect(0, 0, W, H);
+    }
+
+    function frame() {
+      if (!running) return;
+      step();
+      render();
+      requestAnimationFrame(frame);
+    }
+
+    function startLoop() {
+      if (running || document.hidden || !onScreen) return;
+      if (reduceMotion) { sweep = W * 0.5; render(); return; }
+      running = true;
+      requestAnimationFrame(frame);
+    }
+    function stopLoop() { running = false; }
+
+    canvas.addEventListener('pointermove', function (e) {
+      target = e.clientX - canvas.getBoundingClientRect().left;
+      if (reduceMotion) { sweep = target; render(); }
+    });
+    canvas.addEventListener('pointerleave', function () { target = null; });
+
+    window.addEventListener('resize', resize);
+    if (window.visualViewport) window.visualViewport.addEventListener('resize', resize);
+    window.addEventListener('orientationchange', function () { setTimeout(resize, 200); });
+    document.addEventListener('visibilitychange', function () {
+      if (document.hidden) stopLoop(); else startLoop();
+    });
+    if ('IntersectionObserver' in window) {
+      var io = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+          var becomingVisible = entry.isIntersecting && !onScreen;
+          onScreen = entry.isIntersecting;
+          if (onScreen) {
+            if (becomingVisible || canvas.width <= 1) resize();
+            startLoop();
+          } else { stopLoop(); }
+        });
+      }, { threshold: 0 });
+      io.observe(canvas);
+    }
+    canvas.__deckResize = resize;
+    requestAnimationFrame(function () {
+      resize();
+      setTimeout(resize, 200);
+      if (canvas.getBoundingClientRect().width > 1) startLoop();
+    });
+  }
+  window.addEventListener('load', function () {
+    initIndexSweep(document.getElementById('title-index'));
+  });
+})();
+</script>
+</body>
+</html>
