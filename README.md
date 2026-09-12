@@ -43,7 +43,17 @@ and takes an optional `.lens-figs` block for counts.
 ## Controls
 
 Space/→ advance, ← back, **Esc** overview, **F** fullscreen, **B** blank screen,
-click any screenshot to zoom, drag the footer scrubber to jump.
+click any screenshot to zoom (or focus it and press Enter/Space), drag the footer
+scrubber to jump. Escape or the close button dismisses a zoomed image and returns
+focus to its screenshot.
+
+## Tests
+
+With the local server running, exercise the gallery and lightbox in Chromium:
+
+```bash
+uv run --with playwright python tests/gallery_accessibility_browser.py
+```
 
 ## Sources for the figures on the slides
 
