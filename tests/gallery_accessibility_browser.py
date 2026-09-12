@@ -41,6 +41,11 @@ def test_static_image_keyboard_and_modal(page: Page) -> None:
     expect(dialog).to_be_visible()
     expect(close).to_be_focused()
     expect(page.locator("body")).to_have_class(re.compile(r"\blightbox-open\b"))
+    current_hash = page.evaluate("location.hash")
+    page.mouse.wheel(200, 0)
+    expect(dialog).to_be_visible()
+    expect(slide).to_have_class(re.compile(r"\bactive\b"))
+    assert page.evaluate("location.hash") == current_hash
     page.locator("#btn-next").evaluate("element => element.focus()")
     expect_focus_inside(page, "#image-lightbox")
     for _ in range(3):
@@ -77,8 +82,11 @@ def test_active_gallery_pointer_and_keyboard(page: Page) -> None:
 
     items.nth(1).press("Space")
     expect(dialog).to_be_visible()
-    page.get_by_role("button", name="Close zoomed image").click()
+    current_hash = page.evaluate("location.hash")
+    page.get_by_role("button", name="Close zoomed image").tap()
     expect(dialog).to_be_hidden()
+    expect(slide).to_have_class(re.compile(r"\bactive\b"))
+    assert page.evaluate("location.hash") == current_hash
     expect(items.nth(1)).to_be_focused()
 
 
@@ -86,7 +94,9 @@ def main() -> None:
     with sync_playwright() as playwright:
         browser = playwright.chromium.launch()
         try:
-            page = browser.new_page(viewport={"width": 1440, "height": 900})
+            page = browser.new_page(
+                viewport={"width": 1440, "height": 900}, has_touch=True
+            )
             errors: list[str] = []
             page.on("pageerror", lambda error: errors.append(str(error)))
             page.goto(BASE_URL, wait_until="domcontentloaded")

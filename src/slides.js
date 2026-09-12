@@ -265,6 +265,8 @@ function openLightbox(img) {
   lightboxImage.src = img.currentSrc || img.src;
   lightboxImage.alt = img.alt || captionText || 'Zoomed slide image';
   lightboxCaption.textContent = captionText || img.alt || '';
+  swipeOk = false;
+  wheelLock = false;
   lightbox.showModal();
   document.body.classList.add('lightbox-open');
   if (lightboxClose) lightboxClose.focus({ preventScroll: true });
@@ -437,16 +439,19 @@ if (scrubber) {
 var tx = 0, ty = 0, swipeOk = false;
 
 document.addEventListener('touchstart', function(e) {
+  if (lightbox && lightbox.open) { swipeOk = false; return; }
   if (e.touches.length !== 1 || e.target.closest('.stage') || e.target === scrubber || e.target.closest('.sticky-footer')) { swipeOk = false; return; }
   tx = e.touches[0].clientX; ty = e.touches[0].clientY; swipeOk = true;
 }, { passive: true });
 
 document.addEventListener('touchmove', function(e) {
+  if (lightbox && lightbox.open) { swipeOk = false; return; }
   if (!swipeOk || e.touches.length !== 1) return;
   if (Math.abs(e.touches[0].clientY - ty) > Math.abs(e.touches[0].clientX - tx) * 1.5) swipeOk = false;
 }, { passive: true });
 
 document.addEventListener('touchend', function(e) {
+  if (lightbox && lightbox.open) { swipeOk = false; return; }
   if (!swipeOk) return;
   var dx = e.changedTouches[0].clientX - tx;
   var dy = e.changedTouches[0].clientY - ty;
@@ -458,6 +463,7 @@ document.addEventListener('touchend', function(e) {
 /* ── Trackpad wheel ── */
 var wheelLock = false;
 document.addEventListener('wheel', function(e) {
+  if (lightbox && lightbox.open) { wheelLock = false; return; }
   if (document.body.classList.contains('overview') || e.target === scrubber || e.target.closest('.sticky-footer') || wheelLock) return;
   var absX = Math.abs(e.deltaX), absY = Math.abs(e.deltaY);
   if (absX < 30 || absX < absY) return;
