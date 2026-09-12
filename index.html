@@ -9,16 +9,16 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
-  <link rel="stylesheet" href="src/styles.css?v=20260911w" />
+  <link rel="stylesheet" href="src/styles.css?v=20260912a" />
 </head>
 <body>
-<div id="image-lightbox" class="lightbox" aria-hidden="true">
-  <button id="lightbox-close" class="lightbox-close" aria-label="Close zoomed image">×</button>
+<dialog id="image-lightbox" class="lightbox" aria-label="Zoomed slide image">
+  <button id="lightbox-close" class="lightbox-close" type="button" aria-label="Close zoomed image" autofocus>×</button>
   <figure class="lightbox-figure">
     <img id="lightbox-image" src="" alt="">
     <figcaption id="lightbox-caption" class="lightbox-caption"></figcaption>
   </figure>
-</div>
+</dialog>
 <a href="#slide-content" class="skip-link">Skip to slide content</a>
 <div id="slide-announcer" class="sr-only" aria-live="polite" aria-atomic="true"></div>
 
@@ -312,7 +312,7 @@
   </div>
 </footer>
 
-<script src="src/slides.js?v=20260911w"></script>
+<script src="src/slides.js?v=20260912a"></script>
 <script>
 /* Title background — "Index Sweep".
    A field of marks, one per sampled item in the archive. Most sit dark: held,
